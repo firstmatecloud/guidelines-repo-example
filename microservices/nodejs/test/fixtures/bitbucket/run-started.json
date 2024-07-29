@@ -1,0 +1,181 @@
+{
+  "event": "repo:commit_status_created",
+  "data": {
+    "repository": {
+      "type": "repository",
+      "full_name": "firstmatecloud/bitbucket-app",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app"
+        },
+        "html": {
+          "href": "https://bitbucket.org/firstmatecloud/bitbucket-app"
+        },
+        "avatar": {
+          "href": "https://bytebucket.org/ravatar/%7Ba4cf3327-a6fc-406b-b1b6-05f8633a83c9%7D?ts=default"
+        }
+      },
+      "name": "bitbucket-app",
+      "scm": "git",
+      "website": null,
+      "owner": {
+        "display_name": "firstmatecloud",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/workspaces/%7B63597a2d-9132-476b-b77c-604c67d9f99c%7D"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/firstmatecloud/avatar/"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B63597a2d-9132-476b-b77c-604c67d9f99c%7D/"
+          }
+        },
+        "type": "team",
+        "uuid": "{63597a2d-9132-476b-b77c-604c67d9f99c}",
+        "username": "firstmatecloud"
+      },
+      "workspace": {
+        "type": "workspace",
+        "uuid": "{63597a2d-9132-476b-b77c-604c67d9f99c}",
+        "name": "firstmatecloud",
+        "slug": "firstmatecloud",
+        "links": {
+          "avatar": {
+            "href": "https://bitbucket.org/workspaces/firstmatecloud/avatar/?ts=1718269670"
+          },
+          "html": {
+            "href": "https://bitbucket.org/firstmatecloud/"
+          },
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/workspaces/firstmatecloud"
+          }
+        }
+      },
+      "is_private": false,
+      "project": {
+        "type": "project",
+        "key": "FIR",
+        "uuid": "{799d89c5-98d8-4bbc-ba04-f3ba79569d17}",
+        "name": "firstmate",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/workspaces/firstmatecloud/projects/FIR"
+          },
+          "html": {
+            "href": "https://bitbucket.org/firstmatecloud/workspace/projects/FIR"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/user/firstmatecloud/projects/FIR/avatar/32?ts=1718271156"
+          }
+        }
+      },
+      "uuid": "{a4cf3327-a6fc-406b-b1b6-05f8633a83c9}",
+      "parent": null
+    },
+    "actor": {
+      "display_name": "firstmatecloud",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/workspaces/%7B63597a2d-9132-476b-b77c-604c67d9f99c%7D"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/account/firstmatecloud/avatar/"
+        },
+        "html": {
+          "href": "https://bitbucket.org/%7B63597a2d-9132-476b-b77c-604c67d9f99c%7D/"
+        }
+      },
+      "type": "team",
+      "uuid": "{63597a2d-9132-476b-b77c-604c67d9f99c}",
+      "username": "firstmatecloud"
+    },
+    "commit_status": {
+      "key": "3343801",
+      "type": "build",
+      "state": "INPROGRESS",
+      "name": "Pipeline #1 for main",
+      "refname": "main",
+      "commit": {
+        "type": "commit",
+        "hash": "d2331cfa591dfac94648455666d4760cd771f86c",
+        "date": "2024-07-26T13:31:00+00:00",
+        "author": {
+          "type": "author",
+          "raw": "Jochen Wilms <jochen.wilms@firstmate.cloud>",
+          "user": {
+            "display_name": "Jochen Wilms",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/users/%7B7ed12180-ab62-44a2-b2ac-165217aee68f%7D"
+              },
+              "avatar": {
+                "href": "https://secure.gravatar.com/avatar/aa3f74d7f70fc854b74c64366a7dd28d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-0.png"
+              },
+              "html": {
+                "href": "https://bitbucket.org/%7B7ed12180-ab62-44a2-b2ac-165217aee68f%7D/"
+              }
+            },
+            "type": "user",
+            "uuid": "{7ed12180-ab62-44a2-b2ac-165217aee68f}",
+            "account_id": "712020:19213bb6-b857-459b-8495-a31d1b141c63",
+            "nickname": "Jochen Wilms"
+          }
+        },
+        "message": "Initial Bitbucket Pipelines configuration",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/commit/d2331cfa591dfac94648455666d4760cd771f86c"
+          },
+          "html": {
+            "href": "https://bitbucket.org/firstmatecloud/bitbucket-app/commits/d2331cfa591dfac94648455666d4760cd771f86c"
+          },
+          "diff": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/diff/d2331cfa591dfac94648455666d4760cd771f86c"
+          },
+          "approve": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/commit/d2331cfa591dfac94648455666d4760cd771f86c/approve"
+          },
+          "comments": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/commit/d2331cfa591dfac94648455666d4760cd771f86c/comments"
+          },
+          "statuses": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/commit/d2331cfa591dfac94648455666d4760cd771f86c/statuses"
+          },
+          "patch": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/patch/d2331cfa591dfac94648455666d4760cd771f86c"
+          }
+        }
+      },
+      "url": "https://bitbucket.org/firstmatecloud/bitbucket-app/addon/pipelines/home#!/results/1",
+      "repository": {
+        "type": "repository",
+        "full_name": "firstmatecloud/bitbucket-app",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app"
+          },
+          "html": {
+            "href": "https://bitbucket.org/firstmatecloud/bitbucket-app"
+          },
+          "avatar": {
+            "href": "https://bytebucket.org/ravatar/%7Ba4cf3327-a6fc-406b-b1b6-05f8633a83c9%7D?ts=default"
+          }
+        },
+        "name": "bitbucket-app",
+        "uuid": "{a4cf3327-a6fc-406b-b1b6-05f8633a83c9}"
+      },
+      "description": "",
+      "created_on": "2024-07-26T13:31:05.604126+00:00",
+      "updated_on": "2024-07-26T13:31:05.604141+00:00",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/commit/d2331cfa591dfac94648455666d4760cd771f86c/statuses/build/3343801"
+        },
+        "commit": {
+          "href": "https://api.bitbucket.org/2.0/repositories/firstmatecloud/bitbucket-app/commit/d2331cfa591dfac94648455666d4760cd771f86c"
+        }
+      }
+    }
+  }
+}

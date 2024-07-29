@@ -1,0 +1,11 @@
+LOG_LEVEL="debug"
+LOG_PRETTY="true"
+MONGO_DB_CONNECTION_STRING=""SECRET
+PORT="8082"
+MONGO_DB_DB_NAME="DEV"
+KEYVAULT_NAME="firstmate-dev"
+K8_NAMESPACE="firstmate-dev"
+GITHUB_APP_ID="948176"
+API_WEBHOOK_URL="https://api.dev.firstmate.cloud"
+FE_REDIRECT_URL="https://dev.firstmate.cloud"
+JIRA_APP_DESCRIPTOR_KEY="firstmate-private-jira-bot"

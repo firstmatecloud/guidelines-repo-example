@@ -1,0 +1,14 @@
+apiVersion: v2
+description: A Helm chart for Kubernetes
+name: firstmate-dev
+version: 0.0.1
+dependencies:
+  - name: firstmate-backend-helm
+    repository: oci://registry-1.docker.io/desyco
+    version: 0.0.51
+  - name: firstmate-platform-helm
+    repository: oci://registry-1.docker.io/desyco
+    version: 0.0.53
+  - name: firstmate-git-manager-helm
+    repository: oci://registry-1.docker.io/desyco
+    version: 0.0.105

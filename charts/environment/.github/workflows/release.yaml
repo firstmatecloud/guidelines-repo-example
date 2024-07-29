@@ -1,0 +1,59 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - main
+env:
+  ENVIRONMENT_NAMESPACE: firstmate-dev
+  AZURE_SP_CLIENT_ID: 8eef9424-fd23-4013-a9b3-fca7a2deed7e
+  AZURE_SP_TENANT_ID: f82bf646-31b2-4efa-a5f1-56cef35e498b
+  AZURE_SUBSCRIPTION_ID: 9ba3e7d9-3dea-451e-a4bb-3507618c141c
+  AZURE_AKS_RG: firstmate-dev
+  AZURE_AKS_NAME: firstmate-dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      DIR: charts
+      HELM_EXPERIMENTAL_OCI: 1
+    steps:
+      - uses: azure/setup-helm@v1
+        with:
+          version: 'v3.7.1'
+        id: install-helm
+
+      - uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_SP_SECRET }}
+
+      # Use kubelogin to configure your kubeconfig for Azure auth
+      - name: Set up kubelogin for non-interactive login
+        uses: azure/use-kubelogin@v1
+        with:
+          kubelogin-version: 'v0.0.25'
+
+      # Retrieves your Azure Kubernetes Service cluster's kubeconfig file
+      - name: Get K8s context
+        uses: azure/aks-set-context@v3
+        with:
+          resource-group: ${{ env.AZURE_AKS_RG }}
+          cluster-name: ${{ env.AZURE_AKS_NAME }}
+          admin: 'false'
+          use-kubelogin: 'true'
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - id: deploy-staging
+        name: deploy on staging
+        run: |
+          helm dep update ./charts
+          helm upgrade firstmate-dev ./charts -n firstmate-dev --create-namespace --install
+
+          
+
+
+

@@ -1,0 +1,47 @@
+version: 0.0.4
+replicaCount: 1
+serviceAccountName: gitmanager
+resources:
+  limits:
+    cpu: 100m
+    memory: 200Mi
+  requests:
+    cpu: 50m
+    memory: 100Mi
+image:
+  repository: desyco/firstmate-git-manager
+  pullPolicy: IfNotPresent
+
+livenessProbe:
+  probePath: /health
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 1
+  failureThreshold: 3
+readinessProbe:
+  probePath: /health
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 1
+  failureThreshold: 3
+terminationGracePeriodSeconds: 10
+
+secrets:
+  MONGO_DB_CONNECTION_STRING:
+    secretName: backend-secrets
+    secretKey: mongoDbConnString
+
+configmap:
+  data:
+    MONGO_DB_DB_NAME: "PRD"
+    KEYVAULT_NAME: "firstmate-prod"
+    GITHUB_APP_ID: "919451"
+    API_WEBHOOK_URL: "https://api.eu.firstmate.cloud"
+    FE_REDIRECT_URL: "https://console.firstmate.cloud"
+    JIRA_APP_DESCRIPTOR_KEY: "firstmate-jira-bot"
+service:
+  type: ClusterIP
+  externalPort: 80
+  internalPort: 8080

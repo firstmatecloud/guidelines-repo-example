@@ -1,0 +1,46 @@
+ingress:
+  enabled:
+    default: true
+  ingressPublicClassName: nginx
+firstmate-git-manager-helm:
+  tolerations:
+    - operator: "Exists"
+  configmap:
+    data:
+      AI_IMAGE_TAG: "0.0.22"
+      LOG_LEVEL: "debug"
+      LOG_PRETTY: "true"
+      MONGO_DB_DB_NAME: "DEV"
+      K8_NAMESPACE: "firstmate-dev"
+      KEYVAULT_NAME: "firstmate-dev"
+      GITHUB_APP_ID: "948176"
+      API_WEBHOOK_URL: "https://api.dev.firstmate.cloud"
+      FE_REDIRECT_URL: "https://dev.firstmate.cloud"
+firstmate-platform-helm:
+  tolerations:
+    - operator: "Exists"
+  configmap:
+    data:
+      CLIENT_MONITORING_CHART: "firstmate-client-monitoring-chart"
+      CLIENT_MONITORING_REPOSITORY: "oci://registry-1.docker.io/desyco"
+      CLIENT_MONITORING_CHART_VERSION: "0.1.1"
+      CLIENT_EXECUTION_CHART: "firstmate-client-execution-chart"
+      CLIENT_EXECUTION_REPOSITORY: "oci://registry-1.docker.io/desyco"
+      CLIENT_EXECUTION_CHART_VERSION: "0.0.1"
+      AUTH0_DOMAIN: "dev-0k0ko7xlg4kexzm5.eu.auth0.com"
+      AUTH0_CLIENT_ID: "AA0gx1YZnNei7cG9zWCFvcgqpwFrvwmZ"
+      AUTH0_AUDIENCE: "https://dev.firstmate.cloud/api"
+      JIRA_REDIRECT_URL: "https://marketplace.atlassian.com/apps/1234918/firstmate-test-bot?tab=overview&hosting=cloud"
+      BITBUCKET_REDIRECT_URL: "https://bitbucket.org/site/addons/authorize?descriptor_uri=https%3A%2F%2Fapi.bitbucket.org%2F2.0%2Frepositories%2Ffirstmatecloud%2Fbitbucket-app%2Fsrc%2Fmain%2Fbitbucket-test-app.json"
+      GITHUB_REDIRECT_URL: "https://github.com/apps/firstmate-test-bot/installations/new"
+      AZUREDEV_APP_ID: "9f7cba6e-88e1-4bb8-9f49-350da1a2baae"
+firstmate-backend-helm:
+  tolerations:
+    - operator: "Exists"
+  configmap:
+    data:
+      JWT_ISSUER: "https://dev-0k0ko7xlg4kexzm5.eu.auth0.com/"
+      JWT_AUDIENCE: "https://dev.firstmate.cloud/api"
+      MONGO_DB_DB_NAME: "DEV"
+      PROM_FETCH_URL: "http://firstmate-prd-mimir-query-frontend:8080/prometheus"
+      KEYVAULT_NAME: "firstmate-prod"

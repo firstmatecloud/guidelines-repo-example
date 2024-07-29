@@ -1,0 +1,28 @@
+{
+  "orgId": "667bcfa43373307bae3bf4e6",
+  "action": {
+    "type": "ticket",
+    "comment": false,
+    "verb": "created"
+  },
+  "data": {
+    "actor": {
+      "id": 49437403,
+      "name": "WilmsJochen"
+    },
+    "ticket": {
+      "providerId": 30,
+      "title": "Solve all todos",
+      "description": "@firstmate solve all todo's please",
+      "status": "open",
+      "url": "https://github.com/firstmatecloud/ms-nodejs-git-manager/issues/30",
+      "fullName": "/firstmatecloud/ms-nodejs-git-manager/issues/30"
+    },
+    "repo": {
+      "name": "ms-nodejs-git-manager",
+      "description": null,
+      "url": "https://github.com/firstmatecloud/ms-nodejs-git-manager",
+      "fullName": "/firstmatecloud/ms-nodejs-git-manager"
+    }
+  }
+}

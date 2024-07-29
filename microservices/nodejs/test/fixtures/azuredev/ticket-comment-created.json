@@ -1,0 +1,84 @@
+{
+  "subscriptionId": "8200e0ff-2e81-42b8-89d9-19d38f61d89d",
+  "notificationId": 1,
+  "id": "87579ba2-7fe9-4840-9a87-647e1a848ed9",
+  "eventType": "workitem.commented",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Issue #1 (THis is my firstworkItem) commented on by jochen wilms\r\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1)",
+    "html": "<a href=\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=1\">Issue #1</a> (THis is my firstworkItem) commented on by jochen wilms",
+    "markdown": "[Issue #1](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1) (THis is my firstworkItem) commented on by jochen wilms"
+  },
+  "detailedMessage": {
+    "text": "Issue #1 (THis is my firstworkItem) commented on by jochen wilms\r\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1)\r\n\r\nAdd comment on ticket\r\n",
+    "html": "<a href=\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=1\">Issue #1</a> (THis is my firstworkItem) commented on by jochen wilms<br/><div>Add comment on ticket</div>",
+    "markdown": "[Issue #1](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1) (THis is my firstworkItem) commented on by jochen wilms\r\n\r\nAdd comment on ticket\r\n"
+  },
+  "resource": {
+    "id": 1,
+    "rev": 3,
+    "fields": {
+      "System.AreaPath": "test",
+      "System.TeamProject": "test",
+      "System.IterationPath": "test",
+      "System.WorkItemType": "Issue",
+      "System.State": "To Do",
+      "System.Reason": "Added to backlog",
+      "System.CreatedDate": "2024-07-09T08:23:49.033Z",
+      "System.CreatedBy": "jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>",
+      "System.ChangedDate": "2024-07-09T08:25:34.357Z",
+      "System.ChangedBy": "jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>",
+      "System.CommentCount": 1,
+      "System.Title": "THis is my firstworkItem",
+      "Microsoft.VSTS.Common.StateChangeDate": "2024-07-09T08:23:49.033Z",
+      "Microsoft.VSTS.Common.Priority": 2,
+      "System.Description": "<div>I added this later. </div>",
+      "System.History": "<div>Add comment on ticket</div>"
+    },
+    "commentVersionRef": {
+      "commentId": 13411935,
+      "version": 1,
+      "url": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/comments/13411935/versions/1"
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/updates"
+      },
+      "workItemRevisions": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/revisions"
+      },
+      "workItemComments": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/comments"
+      },
+      "html": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_workitems/edit/1"
+      },
+      "workItemType": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItemTypes/Issue"
+      },
+      "fields": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/fields"
+      }
+    },
+    "url": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "1819e758-b656-4871-beb9-190ce017edf3",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    },
+    "account": {
+      "id": "2b79a87c-c631-401d-8e61-e85b84b5943d",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    },
+    "project": {
+      "id": "78d8dde9-9884-4982-bfef-4a7e660eaa9a",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    }
+  },
+  "createdDate": "2024-07-09T08:25:40.6564442Z"
+}

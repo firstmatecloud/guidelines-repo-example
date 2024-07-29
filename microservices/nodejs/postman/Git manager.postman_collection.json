@@ -1,0 +1,1214 @@
+{
+	"info": {
+		"_postman_id": "3fd46e6d-9d14-43f6-882d-cdbe6fce1a22",
+		"name": "Git manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3074150"
+	},
+	"item": [
+		{
+			"name": "bitbucket",
+			"item": [
+				{
+					"name": "bitbucket callback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"key\": \"firstmate-bot\",\n  \"publicKey\": \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBFq+6Iq5J9AZzTZQfZEba9udHTIJToJnoDvWVHk8jKZIrMrVT1oJoAec84+nBhiO/8neqvbTlD7MeIb5aTDZo8YVhBKmQuEJ5RY56EakoR4x5oILsz/Ki5O4nGWSeTCCG1hj4heVsUi77umkYG5sZyHKNO+P+SwctTH1GEBDwswIDAQAB\",\n  \"clientKey\": \"connection:5355741\",\n  \"baseUrl\": \"https://bitbucket.org\",\n  \"sharedSecret\": \"tWOyemE3/Mf7U0+8uzTJy+GK5q8zRY80jEZ7WcigzSI\",\n  \"productType\": \"bitbucket\",\n  \"eventType\": \"uninstalled\",\n  \"baseApiUrl\": \"https://api.bitbucket.org\",\n  \"principal\": {\n    \"display_name\": \"firstmatecloud\",\n    \"links\": { },\n    \"created_on\": \"2024-06-13T09:07:37.150800+00:00\",\n    \"is_active\": true,\n    \"type\": \"team\",\n    \"uuid\": \"{63597a2d-9132-476b-b77c-604c67d9f99c}\",\n    \"has_2fa_enabled\": null,\n    \"properties\": {},\n    \"username\": \"firstmatecloud\"\n  },\n  \"user\": {\n    \"display_name\": \"firstmatecloud\",\n    \"links\": {},\n    \"created_on\": \"2024-06-13T09:07:37.150800+00:00\",\n    \"is_active\": true,\n    \"type\": \"team\",\n    \"uuid\": \"{63597a2d-9132-476b-b77c-604c67d9f99c}\",\n    \"has_2fa_enabled\": null,\n    \"properties\": {},\n    \"username\": \"firstmatecloud\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/callback",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"callback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bitbucket callback private",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"key\": \"firstmate-bot\",\n    \"publicKey\": \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBFq+6Iq5J9AZzTZQfZEba9udHTIJToJnoDvWVHk8jKZIrMrVT1oJoAec84+nBhiO/8neqvbTlD7MeIb5aTDZo8YVhBKmQuEJ5RY56EakoR4x5oILsz/Ki5O4nGWSeTCCG1hj4heVsUi77umkYG5sZyHKNO+P+SwctTH1GEBDwswIDAQAB\",\n    \"clientKey\": \"connection:5356169\",\n    \"baseUrl\": \"https://bitbucket.org\",\n    \"productType\": \"bitbucket\",\n    \"eventType\": \"installed\",\n    \"sharedSecret\": \"J6EiJ+H8EyZ/9cehvI/beSwHk0cSBzm9LF3aywn99YQ\",\n    \"actor\": {\n      \"type\": \"user\",\n      \"uuid\": \"2922111c-8da2-4605-9a60-0fb89eac4b19\",\n      \"account_id\": \"5a128a490dd5cd50523e91f9\"\n    },\n    \"baseApiUrl\": \"https://api.bitbucket.org\",\n    \"principal\": {\n      \"display_name\": \"jochen Wilms\",\n      \"links\": {},\n      \"created_on\": \"2017-11-20T07:54:34.115584+00:00\",\n      \"is_active\": true,\n      \"type\": \"user\",\n      \"uuid\": \"{2922111c-8da2-4605-9a60-0fb89eac4b19}\",\n      \"has_2fa_enabled\": null,\n      \"properties\": {},\n      \"is_staff\": false,\n      \"account_id\": \"5a128a490dd5cd50523e91f9\",\n      \"nickname\": \"JochenWilms\",\n      \"account_status\": \"active\",\n      \"location\": null,\n      \"zoneinfo\": null,\n      \"organization\": null,\n      \"department\": null,\n      \"job_title\": null\n    },\n    \"user\": {\n      \"display_name\": \"jochen Wilms\",\n      \"links\": {},\n      \"created_on\": \"2017-11-20T07:54:34.115584+00:00\",\n      \"is_active\": true,\n      \"type\": \"user\",\n      \"uuid\": \"{2922111c-8da2-4605-9a60-0fb89eac4b19}\",\n      \"has_2fa_enabled\": null,\n      \"properties\": {},\n      \"is_staff\": false,\n      \"account_id\": \"5a128a490dd5cd50523e91f9\",\n      \"nickname\": \"JochenWilms\",\n      \"account_status\": \"active\",\n      \"location\": null,\n      \"zoneinfo\": null,\n      \"organization\": null,\n      \"department\": null,\n      \"job_title\": null\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/callback",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"callback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bitbucket webhook PR-created",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"event\": \"pullrequest:created\",\n  \"data\": {\n    \"repository\": {\n      \"type\": \"repository\",\n      \"full_name\": \"firstmatecloud/bitbucket-test-repo\",\n      \"links\": {},\n      \"name\": \"bitbucket-test-repo\",\n      \"scm\": \"git\",\n      \"website\": null,\n      \"owner\": {},\n      \"workspace\": {},\n      \"is_private\": true,\n      \"project\": {},\n      \"uuid\": \"{b7782be2-28d6-4a24-a5af-fde325e33cb5}\",\n      \"parent\": null\n    },\n    \"actor\": {\n      \"display_name\": \"Jochen Wilms\",\n      \"links\": {},\n      \"type\": \"user\",\n      \"uuid\": \"{7ed12180-ab62-44a2-b2ac-165217aee68f}\",\n      \"account_id\": \"712020:19213bb6-b857-459b-8495-a31d1b141c63\",\n      \"nickname\": \"Jochen Wilms\"\n    },\n    \"pullrequest\": {\n      \"comment_count\": 0,\n      \"task_count\": 0,\n      \"type\": \"pullrequest\",\n      \"id\": 1,\n      \"title\": \"testPR.json created online with Bitbucket\",\n      \"description\": \"testPR.json created online with Bitbucket\",\n      \"rendered\": {},\n      \"state\": \"OPEN\",\n      \"merge_commit\": null,\n      \"close_source_branch\": true,\n      \"closed_by\": null,\n      \"author\": {},\n      \"reason\": \"\",\n      \"created_on\": \"2024-06-18T08:05:17.733003+00:00\",\n      \"updated_on\": \"2024-06-18T08:05:18.992207+00:00\",\n      \"destination\": {},\n      \"source\": {},\n      \"reviewers\": [],\n      \"participants\": [],\n      \"links\": {},\n      \"summary\": {}\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bitbucket webhook PR-rejected",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"event\": \"pullrequest:rejected\",\n  \"data\": {\n    \"repository\": {\n      \"type\": \"repository\",\n      \"full_name\": \"firstmatecloud/bitbucket-test-repo\",\n      \"links\": {},\n      \"name\": \"bitbucket-test-repo\",\n      \"scm\": \"git\",\n      \"website\": null,\n      \"owner\": {},\n      \"workspace\": {},\n      \"is_private\": true,\n      \"project\": {},\n      \"uuid\": \"{b7782be2-28d6-4a24-a5af-fde325e33cb5}\",\n      \"parent\": null\n    },\n    \"actor\": {\n      \"display_name\": \"Jochen Wilms\",\n      \"links\": {},\n      \"type\": \"user\",\n      \"uuid\": \"{7ed12180-ab62-44a2-b2ac-165217aee68f}\",\n      \"account_id\": \"712020:19213bb6-b857-459b-8495-a31d1b141c63\",\n      \"nickname\": \"Jochen Wilms\"\n    },\n    \"pullrequest\": {\n      \"comment_count\": 0,\n      \"task_count\": 0,\n      \"type\": \"pullrequest\",\n      \"id\": 1,\n      \"title\": \"testPR.json created online with Bitbucket\",\n      \"description\": \"testPR.json created online with Bitbucket\",\n      \"rendered\": {},\n      \"state\": \"OPEN\",\n      \"merge_commit\": null,\n      \"close_source_branch\": true,\n      \"closed_by\": null,\n      \"author\": {},\n      \"reason\": \"\",\n      \"created_on\": \"2024-06-18T08:05:17.733003+00:00\",\n      \"updated_on\": \"2024-06-18T08:05:18.992207+00:00\",\n      \"destination\": {},\n      \"source\": {},\n      \"reviewers\": [],\n      \"participants\": [],\n      \"links\": {},\n      \"summary\": {}\n    }\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bitbucket webhook PR-changes request Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"event\": \"pullrequest:changes_request_created\",\n  \"data\": {\n    \"repository\": {\n      \"type\": \"repository\",\n      \"full_name\": \"firstmatecloud/bitbucket-test-repo\",\n      \"links\": {},\n      \"name\": \"bitbucket-test-repo\",\n      \"scm\": \"git\",\n      \"website\": null,\n      \"owner\": {},\n      \"workspace\": {},\n      \"is_private\": true,\n      \"project\": {},\n      \"uuid\": \"{b7782be2-28d6-4a24-a5af-fde325e33cb5}\",\n      \"parent\": null\n    },\n    \"actor\": {\n      \"display_name\": \"Jochen Wilms\",\n      \"links\": {},\n      \"type\": \"user\",\n      \"uuid\": \"{7ed12180-ab62-44a2-b2ac-165217aee68f}\",\n      \"account_id\": \"712020:19213bb6-b857-459b-8495-a31d1b141c63\",\n      \"nickname\": \"Jochen Wilms\"\n    },\n    \"pullrequest\": {\n      \"comment_count\": 0,\n      \"task_count\": 0,\n      \"type\": \"pullrequest\",\n      \"id\": 1,\n      \"title\": \"testPR.json created online with Bitbucket\",\n      \"description\": \"testPR.json created online with Bitbucket\",\n      \"rendered\": {},\n      \"state\": \"OPEN\",\n      \"merge_commit\": null,\n      \"close_source_branch\": true,\n      \"closed_by\": null,\n      \"author\": {},\n      \"reason\": \"\",\n      \"created_on\": \"2024-06-18T08:05:17.733003+00:00\",\n      \"updated_on\": \"2024-06-18T08:05:18.992207+00:00\",\n      \"destination\": {},\n      \"source\": {},\n      \"reviewers\": [],\n      \"participants\": [],\n      \"links\": {},\n      \"summary\": {}\n    }\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bitbucket webhook PR-unapproved",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"event\": \"pullrequest:unapproved\",\n  \"data\": {\n    \"repository\": {\n      \"type\": \"repository\",\n      \"full_name\": \"firstmatecloud/bitbucket-test-repo\",\n      \"links\": {},\n      \"name\": \"bitbucket-test-repo\",\n      \"scm\": \"git\",\n      \"website\": null,\n      \"owner\": {},\n      \"workspace\": {},\n      \"is_private\": true,\n      \"project\": {},\n      \"uuid\": \"{b7782be2-28d6-4a24-a5af-fde325e33cb5}\",\n      \"parent\": null\n    },\n    \"actor\": {\n      \"display_name\": \"Jochen Wilms\",\n      \"links\": {},\n      \"type\": \"user\",\n      \"uuid\": \"{7ed12180-ab62-44a2-b2ac-165217aee68f}\",\n      \"account_id\": \"712020:19213bb6-b857-459b-8495-a31d1b141c63\",\n      \"nickname\": \"Jochen Wilms\"\n    },\n    \"pullrequest\": {\n      \"comment_count\": 0,\n      \"task_count\": 0,\n      \"type\": \"pullrequest\",\n      \"id\": 1,\n      \"title\": \"testPR.json created online with Bitbucket\",\n      \"description\": \"testPR.json created online with Bitbucket\",\n      \"rendered\": {},\n      \"state\": \"OPEN\",\n      \"merge_commit\": null,\n      \"close_source_branch\": true,\n      \"closed_by\": null,\n      \"author\": {},\n      \"reason\": \"\",\n      \"created_on\": \"2024-06-18T08:05:17.733003+00:00\",\n      \"updated_on\": \"2024-06-18T08:05:18.992207+00:00\",\n      \"destination\": {},\n      \"source\": {},\n      \"reviewers\": [],\n      \"participants\": [],\n      \"links\": {},\n      \"summary\": {}\n    }\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bitbucket webhook PR-fullfilled",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"event\": \"pullrequest:fulfilled\",\n  \"data\": {\n    \"repository\": {\n      \"type\": \"repository\",\n      \"full_name\": \"firstmatecloud/bitbucket-test-repo\",\n      \"links\": {},\n      \"name\": \"bitbucket-test-repo\",\n      \"scm\": \"git\",\n      \"website\": null,\n      \"owner\": {},\n      \"workspace\": {},\n      \"is_private\": true,\n      \"project\": {},\n      \"uuid\": \"{b7782be2-28d6-4a24-a5af-fde325e33cb5}\",\n      \"parent\": null\n    },\n    \"actor\": {\n      \"display_name\": \"Jochen Wilms\",\n      \"links\": {},\n      \"type\": \"user\",\n      \"uuid\": \"{7ed12180-ab62-44a2-b2ac-165217aee68f}\",\n      \"account_id\": \"712020:19213bb6-b857-459b-8495-a31d1b141c63\",\n      \"nickname\": \"Jochen Wilms\"\n    },\n    \"pullrequest\": {\n      \"comment_count\": 0,\n      \"task_count\": 0,\n      \"type\": \"pullrequest\",\n      \"id\": 1,\n      \"title\": \"testPR.json created online with Bitbucket\",\n      \"description\": \"testPR.json created online with Bitbucket\",\n      \"rendered\": {},\n      \"state\": \"OPEN\",\n      \"merge_commit\": null,\n      \"close_source_branch\": true,\n      \"closed_by\": null,\n      \"author\": {},\n      \"reason\": \"\",\n      \"created_on\": \"2024-06-18T08:05:17.733003+00:00\",\n      \"updated_on\": \"2024-06-18T08:05:18.992207+00:00\",\n      \"destination\": {},\n      \"source\": {},\n      \"reviewers\": [],\n      \"participants\": [],\n      \"links\": {},\n      \"summary\": {}\n    }\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/bitbucket/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"bitbucket",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "azuredev",
+			"item": [
+				{
+					"name": "Ticket creation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "UIiZMmrThWWXdM9P5rCjXmI7mbrmMqRQcth3CVYnNUR5rNnSfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"subscriptionId\": \"5ba42abe-2f90-41e2-b64b-a856411eda27\",\n      \"notificationId\": 2,\n      \"id\": \"cf60c51b-c8ff-4f72-aa10-62ec57db10ed\",\n      \"eventType\": \"workitem.created\",\n      \"publisherId\": \"tfs\",\n      \"message\": {\n        \"text\": \"Issue #2 (service bus) created by jochen wilms\\r\\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=2)\",\n        \"html\": \"<a href=\\\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=2\\\">Issue #2</a> (service bus) created by jochen wilms\",\n        \"markdown\": \"[Issue #2](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=2) (service bus) created by jochen wilms\"\n      },\n      \"detailedMessage\": {\n        \"text\": \"Issue #2 (service bus) created by jochen wilms\\r\\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=2)\\r\\n\\r\\n- Area: test\\r\\n- Iteration: test\\r\\n- State: To Do\\r\\n\",\n        \"html\": \"<a href=\\\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=2\\\">Issue #2</a> (service bus) created by jochen wilms<ul>\\r\\n<li>Area: test</li>\\r\\n<li>Iteration: test</li>\\r\\n<li>State: To Do</li></ul>\",\n        \"markdown\": \"[Issue #2](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=2) (service bus) created by jochen wilms\\r\\n\\r\\n* Area: test\\r\\n* Iteration: test\\r\\n* State: To Do\\r\\n\"\n      },\n      \"resource\": {\n        \"id\": 2,\n        \"rev\": 1,\n        \"fields\": {\n          \"System.AreaPath\": \"test\",\n          \"System.TeamProject\": \"test\",\n          \"System.IterationPath\": \"test\",\n          \"System.WorkItemType\": \"Issue\",\n          \"System.State\": \"To Do\",\n          \"System.Reason\": \"Added to backlog\",\n          \"System.CreatedDate\": \"2024-07-10T13:27:46.347Z\",\n          \"System.CreatedBy\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\",\n          \"System.ChangedDate\": \"2024-07-10T13:27:46.347Z\",\n          \"System.ChangedBy\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\",\n          \"System.CommentCount\": 0,\n          \"System.Title\": \"service bus\",\n          \"Microsoft.VSTS.Common.StateChangeDate\": \"2024-07-10T13:27:46.347Z\",\n          \"Microsoft.VSTS.Common.Priority\": 2,\n          \"System.Description\": \"<div>@firstmate Create a new terraform module in the test infra repo to deploy a service bus namespace and a queue.&nbsp;&nbsp; </div>\"\n        },\n        \"_links\": {\n          \"self\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/2\"\n          },\n          \"workItemUpdates\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/2/updates\"\n          },\n          \"workItemRevisions\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/2/revisions\"\n          },\n          \"workItemComments\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/2/comments\"\n          },\n          \"html\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_workitems/edit/2\"\n          },\n          \"workItemType\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItemTypes/Issue\"\n          },\n          \"fields\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/fields\"\n          }\n        },\n        \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/2\"\n      },\n      \"resourceVersion\": \"1.0\",\n      \"resourceContainers\": {\n        \"collection\": {\n          \"id\": \"1819e758-b656-4871-beb9-190ce017edf3\",\n          \"baseUrl\": \"https://dev.azure.com/desyco/\"\n        },\n        \"account\": {\n          \"id\": \"2b79a87c-c631-401d-8e61-e85b84b5943d\",\n          \"baseUrl\": \"https://dev.azure.com/desyco/\"\n        },\n        \"project\": {\n          \"id\": \"78d8dde9-9884-4982-bfef-4a7e660eaa9a\",\n          \"baseUrl\": \"https://dev.azure.com/desyco/\"\n        }\n      },\n      \"createdDate\": \"2024-07-10T13:27:53.2901536Z\"\n    }\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/azuredev/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"azuredev",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment on Ticket",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "UIiZMmrThWWXdM9P5rCjXmI7mbrmMqRQcth3CVYnNUR5rNnSfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n      \"subscriptionId\": \"c77bb8f4-4bbd-411c-a3b6-7fc46aa3c2ad\",\n      \"notificationId\": 6,\n      \"id\": \"b0d5eea0-4d00-4447-852c-68404fc2918f\",\n      \"eventType\": \"workitem.updated\",\n      \"publisherId\": \"tfs\",\n      \"message\": {\n        \"text\": \"Task #5 (Add service bus) updated by jochen wilms\\r\\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=5)\",\n        \"html\": \"<a href=\\\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=5\\\">Task #5</a> (Add service bus) updated by jochen wilms\",\n        \"markdown\": \"[Task #5](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=5) (Add service bus) updated by jochen wilms\"\n      },\n      \"detailedMessage\": {\n        \"text\": \"Task #5 (Add service bus) updated by jochen wilms\\r\\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=5)\\r\\n\\r\\n- Comment: \\r\\n@firstmate i added another comment for no reason. you can ignore this.\\r\\n\\r\\n\",\n        \"html\": \"<a href=\\\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=5\\\">Task #5</a> (Add service bus) updated by jochen wilms<ul>\\r\\n<li>Comment: <div>@firstmate i added another comment for no reason. you can ignore this.</div></li></ul>\",\n        \"markdown\": \"[Task #5](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=5) (Add service bus) updated by jochen wilms\\r\\n\\r\\n* Comment: \\r\\n@firstmate i added another comment for no reason. you can ignore this.\\r\\n\\r\\n\"\n      },\n      \"resource\": {\n        \"id\": 7,\n        \"workItemId\": 5,\n        \"rev\": 7,\n        \"revisedBy\": {\n          \"id\": \"9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n          \"name\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\",\n          \"displayName\": \"jochen wilms\",\n          \"url\": \"https://spsprodneu1.vssps.visualstudio.com/A2b79a87c-c631-401d-8e61-e85b84b5943d/_apis/Identities/9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n          \"_links\": {\n            \"avatar\": {\n              \"href\": \"https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\"\n            }\n          },\n          \"uniqueName\": \"azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com\",\n          \"imageUrl\": \"https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\",\n          \"descriptor\": \"aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\"\n        },\n        \"revisedDate\": \"9999-01-01T00:00:00Z\",\n        \"fields\": {\n          \"System.Rev\": {\n            \"oldValue\": 6,\n            \"newValue\": 7\n          },\n          \"System.AuthorizedDate\": {\n            \"oldValue\": \"2024-07-11T13:46:49.477Z\",\n            \"newValue\": \"2024-07-11T15:42:54.437Z\"\n          },\n          \"System.RevisedDate\": {\n            \"oldValue\": \"2024-07-11T15:42:54.437Z\",\n            \"newValue\": \"9999-01-01T00:00:00Z\"\n          },\n          \"System.ChangedDate\": {\n            \"oldValue\": \"2024-07-11T13:46:49.477Z\",\n            \"newValue\": \"2024-07-11T15:42:54.437Z\"\n          },\n          \"System.ChangedBy\": {\n            \"oldValue\": \"FirstMateBot <c648c2e5-6062-40a9-a01b-ea9cbcbf1a7a>\",\n            \"newValue\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\"\n          },\n          \"System.AuthorizedAs\": {\n            \"oldValue\": \"FirstMateBot <c648c2e5-6062-40a9-a01b-ea9cbcbf1a7a>\",\n            \"newValue\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\"\n          },\n          \"System.PersonId\": {\n            \"oldValue\": 304990245,\n            \"newValue\": 304846886\n          },\n          \"System.Watermark\": {\n            \"oldValue\": 17,\n            \"newValue\": 18\n          },\n          \"System.CommentCount\": {\n            \"oldValue\": 5,\n            \"newValue\": 6\n          },\n          \"System.History\": {\n            \"oldValue\": \"I created [this pull request](https://dev.azure.com/desyco/test/_git/test-infra-terraform/pullrequest/11) for this issue.\",\n            \"newValue\": \"<div>@firstmate i added another comment for no reason. you can ignore this.</div>\"\n          }\n        },\n        \"_links\": {\n          \"self\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/updates/7\"\n          },\n          \"workItemUpdates\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/updates\"\n          },\n          \"parent\": {\n            \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5\"\n          },\n          \"html\": {\n            \"href\": \"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=5\"\n          }\n        },\n        \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/updates/7\",\n        \"revision\": {\n          \"id\": 5,\n          \"rev\": 7,\n          \"fields\": {\n            \"System.AreaPath\": \"test\",\n            \"System.TeamProject\": \"test\",\n            \"System.IterationPath\": \"test\",\n            \"System.WorkItemType\": \"Task\",\n            \"System.State\": \"To Do\",\n            \"System.Reason\": \"Added to backlog\",\n            \"System.CreatedDate\": \"2024-07-11T10:21:48.82Z\",\n            \"System.CreatedBy\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\",\n            \"System.ChangedDate\": \"2024-07-11T15:42:54.437Z\",\n            \"System.ChangedBy\": \"jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>\",\n            \"System.CommentCount\": 6,\n            \"System.Title\": \"Add service bus\",\n            \"Microsoft.VSTS.Common.StateChangeDate\": \"2024-07-11T10:21:48.82Z\",\n            \"Microsoft.VSTS.Common.Priority\": 2,\n            \"System.Description\": \"<div><div style=\\\"box-sizing:border-box;\\\">@firstmate Create a new terraform module in the test infra repo to deploy a service bus namespace and a queue. </div><br><br> </div>\",\n            \"System.History\": \"<div>@firstmate i added another comment for no reason. you can ignore this.</div>\"\n          },\n          \"commentVersionRef\": {\n            \"commentId\": 13416168,\n            \"version\": 1,\n            \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/comments/13416168/versions/1\"\n          },\n          \"_links\": {\n            \"self\": {\n              \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/revisions/7\"\n            },\n            \"workItemRevisions\": {\n              \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/revisions\"\n            },\n            \"parent\": {\n              \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5\"\n            }\n          },\n          \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/5/revisions/7\"\n        }\n      },\n      \"resourceVersion\": \"1.0\",\n      \"resourceContainers\": {\n        \"collection\": {\n          \"id\": \"1819e758-b656-4871-beb9-190ce017edf3\",\n          \"baseUrl\": \"https://dev.azure.com/desyco/\"\n        },\n        \"account\": {\n          \"id\": \"2b79a87c-c631-401d-8e61-e85b84b5943d\",\n          \"baseUrl\": \"https://dev.azure.com/desyco/\"\n        },\n        \"project\": {\n          \"id\": \"78d8dde9-9884-4982-bfef-4a7e660eaa9a\",\n          \"baseUrl\": \"https://dev.azure.com/desyco/\"\n        }\n      },\n      \"createdDate\": \"2024-07-11T15:43:01.3184524Z\"\n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/azuredev/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"azuredev",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pr created",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "UIiZMmrThWWXdM9P5rCjXmI7mbrmMqRQcth3CVYnNUR5rNnSfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"subscriptionId\": \"0010fdcd-e68d-457d-ae45-6fbd6f5e924e\",\n  \"notificationId\": 1,\n  \"id\": \"d57a32fc-0fa5-4f8a-b8a0-1745bff83952\",\n  \"eventType\": \"git.pullrequest.created\",\n  \"publisherId\": \"tfs\",\n  \"message\": {\n    \"text\": \"jochen wilms created pull request 3 (Add http call) in test\\r\\nhttps://dev.azure.com/desyco/test/_git/test/\",\n    \"html\": \"jochen wilms created <a href=\\\"https://dev.azure.com/desyco/test/_git/test/pullrequest/3\\\">pull request 3</a> (Add http call) in <a href=\\\"https://dev.azure.com/desyco/test/_git/test/\\\">test</a>\",\n    \"markdown\": \"jochen wilms created [pull request 3](https://dev.azure.com/desyco/test/_git/test/pullrequest/3) (Add http call) in [test](https://dev.azure.com/desyco/test/_git/test/)\"\n  },\n  \"detailedMessage\": {\n    \"text\": \"jochen wilms created pull request 3 (Add http call) in test\\r\\nhttps://dev.azure.com/desyco/test/_git/test/\\r\\n@firstmate add http call\\r\\n\",\n    \"html\": \"jochen wilms created <a href=\\\"https://dev.azure.com/desyco/test/_git/test/pullrequest/3\\\">pull request 3</a> (Add http call) in <a href=\\\"https://dev.azure.com/desyco/test/_git/test/\\\">test</a><p>@firstmate add http call</p>\",\n    \"markdown\": \"jochen wilms created [pull request 3](https://dev.azure.com/desyco/test/_git/test/pullrequest/3) (Add http call) in [test](https://dev.azure.com/desyco/test/_git/test/)\\r\\n@firstmate add http call\\r\\n\"\n  },\n  \"resource\": {\n    \"repository\": {\n      \"id\": \"ba8bff70-6791-415c-b1f5-64486a33fb6f\",\n      \"name\": \"test\",\n      \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f\",\n      \"project\": {\n        \"id\": \"78d8dde9-9884-4982-bfef-4a7e660eaa9a\",\n        \"name\": \"test\",\n        \"url\": \"https://dev.azure.com/desyco/_apis/projects/78d8dde9-9884-4982-bfef-4a7e660eaa9a\",\n        \"state\": \"wellFormed\",\n        \"revision\": 11,\n        \"visibility\": \"private\",\n        \"lastUpdateTime\": \"2024-06-28T12:42:48.307Z\"\n      },\n      \"size\": 16190,\n      \"remoteUrl\": \"https://desyco@dev.azure.com/desyco/test/_git/test\",\n      \"sshUrl\": \"git@ssh.dev.azure.com:v3/desyco/test/test\",\n      \"webUrl\": \"https://dev.azure.com/desyco/test/_git/test\",\n      \"isDisabled\": false,\n      \"isInMaintenance\": false\n    },\n    \"pullRequestId\": 3,\n    \"codeReviewId\": 3,\n    \"status\": \"active\",\n    \"createdBy\": {\n      \"displayName\": \"jochen wilms\",\n      \"url\": \"https://spsprodneu1.vssps.visualstudio.com/A2b79a87c-c631-401d-8e61-e85b84b5943d/_apis/Identities/9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n      \"_links\": {\n        \"avatar\": {\n          \"href\": \"https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\"\n        }\n      },\n      \"id\": \"9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n      \"uniqueName\": \"azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com\",\n      \"imageUrl\": \"https://dev.azure.com/desyco/_api/_common/identityImage?id=9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n      \"descriptor\": \"aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\"\n    },\n    \"creationDate\": \"2024-07-09T08:16:14.7502104Z\",\n    \"title\": \"Add http call\",\n    \"description\": \"@firstmate add http call\",\n    \"sourceRefName\": \"refs/heads/add-http-call\",\n    \"targetRefName\": \"refs/heads/main\",\n    \"mergeStatus\": \"succeeded\",\n    \"isDraft\": false,\n    \"mergeId\": \"85be1e7b-359f-438a-b911-e26ebfd5c33d\",\n    \"lastMergeSourceCommit\": {\n      \"commitId\": \"fb4d575565b180d375d3c1f343a392bbb8f4f07f\",\n      \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/commits/fb4d575565b180d375d3c1f343a392bbb8f4f07f\"\n    },\n    \"lastMergeTargetCommit\": {\n      \"commitId\": \"d0810594723aa940754f951cba3c6763055dc144\",\n      \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/commits/d0810594723aa940754f951cba3c6763055dc144\"\n    },\n    \"lastMergeCommit\": {\n      \"commitId\": \"cdf606d8f816b5b6d237b35d5d515b600af8dc26\",\n      \"author\": {\n        \"name\": \"jochen wilms\",\n        \"email\": \"azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com\",\n        \"date\": \"2024-07-09T08:16:14Z\"\n      },\n      \"committer\": {\n        \"name\": \"jochen wilms\",\n        \"email\": \"azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com\",\n        \"date\": \"2024-07-09T08:16:14Z\"\n      },\n      \"comment\": \"Merge pull request 3 from add-http-call into main\",\n      \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/commits/cdf606d8f816b5b6d237b35d5d515b600af8dc26\"\n    },\n    \"reviewers\": [],\n    \"url\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/pullRequests/3\",\n    \"_links\": {\n      \"web\": {\n        \"href\": \"https://dev.azure.com/desyco/test/_git/test/pullrequest/3\"\n      },\n      \"statuses\": {\n        \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/pullRequests/3/statuses\"\n      }\n    },\n    \"supportsIterations\": true,\n    \"artifactId\": \"vstfs:///Git/PullRequestId/78d8dde9-9884-4982-bfef-4a7e660eaa9a%2fba8bff70-6791-415c-b1f5-64486a33fb6f%2f3\"\n  },\n  \"resourceVersion\": \"1.0\",\n  \"resourceContainers\": {\n    \"collection\": {\n      \"id\": \"1819e758-b656-4871-beb9-190ce017edf3\",\n      \"baseUrl\": \"https://dev.azure.com/desyco/\"\n    },\n    \"account\": {\n      \"id\": \"2b79a87c-c631-401d-8e61-e85b84b5943d\",\n      \"baseUrl\": \"https://dev.azure.com/desyco/\"\n    },\n    \"project\": {\n      \"id\": \"78d8dde9-9884-4982-bfef-4a7e660eaa9a\",\n      \"baseUrl\": \"https://dev.azure.com/desyco/\"\n    }\n  },\n  \"createdDate\": \"2024-07-09T08:16:21.8821592Z\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/azuredev/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"azuredev",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment on pr",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "UIiZMmrThWWXdM9P5rCjXmI7mbrmMqRQcth3CVYnNUR5rNnSfM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"subscriptionId\": \"39cbbb3d-21ff-463a-b49b-18d99bd05918\",\n  \"notificationId\": 2,\n  \"id\": \"ad291517-616b-4f63-b640-9ae2d0507dae\",\n  \"eventType\": \"ms.vss-code.git-pullrequest-comment-event\",\n  \"publisherId\": \"tfs\",\n  \"message\": {\n    \"text\": \"jochen wilms has commented on a pull request\",\n    \"html\": \"jochen wilms has <a href=\\\"https://dev.azure.com/desyco/test/_git/test-infra-terraform/pullrequest/12?discussionId=14\\\">commented</a> on a pull request\",\n    \"markdown\": \"jochen wilms has [commented](https://dev.azure.com/desyco/test/_git/test-infra-terraform/pullrequest/12?discussionId=14) on a pull request\"\n  },\n  \"detailedMessage\": {\n    \"text\": \"jochen wilms has commented on a pull request\\r\\n@firstmate maybe better to split the authentication of the service bus in another terraform module.\\r\\n\",\n    \"html\": \"jochen wilms has <a href=\\\"https://dev.azure.com/desyco/test/_git/test-infra-terraform/pullrequest/12?discussionId=14\\\">commented</a> on a pull request<p>@firstmate maybe better to split the authentication of the service bus in another terraform module.</p>\",\n    \"markdown\": \"jochen wilms has [commented](https://dev.azure.com/desyco/test/_git/test-infra-terraform/pullrequest/12?discussionId=14) on a pull request\\r\\n@firstmate maybe better to split the authentication of the service bus in another terraform module.\\r\\n\"\n  },\n  \"resource\": {\n    \"id\": 1,\n    \"parentCommentId\": 0,\n    \"author\": {\n      \"displayName\": \"jochen wilms\",\n      \"url\": \"https://spsprodneu1.vssps.visualstudio.com/A2b79a87c-c631-401d-8e61-e85b84b5943d/_apis/Identities/9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n      \"_links\": {\n        \"avatar\": {\n          \"href\": \"https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\"\n        }\n      },\n      \"id\": \"9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2\",\n      \"uniqueName\": \"azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com\",\n      \"imageUrl\": \"https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\",\n      \"descriptor\": \"aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy\"\n    },\n    \"content\": \"@firstmate maybe better to split the authentication of the service bus in another terraform module.\",\n    \"publishedDate\": \"2024-07-12T07:15:44.267Z\",\n    \"lastUpdatedDate\": \"2024-07-12T07:15:44.267Z\",\n    \"lastContentUpdatedDate\": \"2024-07-12T07:15:44.267Z\",\n    \"commentType\": \"text\",\n    \"usersLiked\": [],\n    \"_links\": {\n      \"self\": {\n        \"href\": \"https://dev.azure.com/desyco/_apis/git/repositories/1e7e2605-702c-4697-841a-d871066d2f00/pullRequests/12/threads/14/comments/1\"\n      },\n      \"repository\": {\n        \"href\": \"https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/1e7e2605-702c-4697-841a-d871066d2f00\"\n      },\n      \"threads\": {\n        \"href\": \"https://dev.azure.com/desyco/_apis/git/repositories/1e7e2605-702c-4697-841a-d871066d2f00/pullRequests/12/threads/14\"\n      },\n      \"pullRequests\": {\n        \"href\": \"https://dev.azure.com/desyco/_apis/git/pullRequests/12\"\n      }\n    }\n  },\n  \"resourceVersion\": \"1.0\",\n  \"resourceContainers\": {\n    \"collection\": {\n      \"id\": \"1819e758-b656-4871-beb9-190ce017edf3\",\n      \"baseUrl\": \"https://dev.azure.com/desyco/\"\n    },\n    \"account\": {\n      \"id\": \"2b79a87c-c631-401d-8e61-e85b84b5943d\",\n      \"baseUrl\": \"https://dev.azure.com/desyco/\"\n    },\n    \"project\": {\n      \"id\": \"78d8dde9-9884-4982-bfef-4a7e660eaa9a\",\n      \"baseUrl\": \"https://dev.azure.com/desyco/\"\n    }\n  },\n  \"createdDate\": \"2024-07-12T07:15:50.5664284Z\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/azuredev/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"azuredev",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Github",
+			"item": [
+				{
+					"name": "ticketCreation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"opened\",\n    \"issue\": {\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6\",\n        \"repository_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n        \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/labels{/name}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/comments\",\n        \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/events\",\n        \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/issues/6\",\n        \"id\": 2385765166,\n        \"node_id\": \"I_kwDOMIWkKM6OM-Mu\",\n        \"number\": 6,\n        \"title\": \"implement all todos\",\n        \"user\": {\n            \"login\": \"WilmsJochen\",\n            \"id\": 49437403,\n            \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/WilmsJochen\",\n            \"html_url\": \"https://github.com/WilmsJochen\",\n            \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n            \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n            \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n            \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n            \"type\": \"User\",\n            \"site_admin\": false\n        },\n        \"labels\": [],\n        \"state\": \"open\",\n        \"locked\": false,\n        \"assignee\": null,\n        \"assignees\": [],\n        \"milestone\": null,\n        \"comments\": 0,\n        \"created_at\": \"2024-07-02T09:39:25Z\",\n        \"updated_at\": \"2024-07-02T09:39:25Z\",\n        \"closed_at\": null,\n        \"author_association\": \"CONTRIBUTOR\",\n        \"active_lock_reason\": null,\n        \"body\": \"firstmate help please.\",\n        \"reactions\": {\n            \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/reactions\",\n            \"total_count\": 0,\n            \"+1\": 0,\n            \"-1\": 0,\n            \"laugh\": 0,\n            \"hooray\": 0,\n            \"confused\": 0,\n            \"heart\": 0,\n            \"rocket\": 0,\n            \"eyes\": 0\n        },\n        \"timeline_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/timeline\",\n        \"performed_via_github_app\": null,\n        \"state_reason\": null\n    },\n    \"repository\": {\n        \"id\": 814064680,\n        \"node_id\": \"R_kgDOMIWkKA\",\n        \"name\": \"ms-nodejs-git-manager\",\n        \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n        \"private\": true,\n        \"owner\": {\n            \"login\": \"firstmatecloud\",\n            \"id\": 169379507,\n            \"node_id\": \"O_kgDOChiGsw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/firstmatecloud\",\n            \"html_url\": \"https://github.com/firstmatecloud\",\n            \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n            \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n            \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n            \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n            \"type\": \"Organization\",\n            \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n        \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n        \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n        \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n        \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n        \"created_at\": \"2024-06-12T09:18:30Z\",\n        \"updated_at\": \"2024-07-02T09:09:29Z\",\n        \"pushed_at\": \"2024-07-02T09:10:16Z\",\n        \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n        \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n        \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n        \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n        \"homepage\": null,\n        \"size\": 106,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"JavaScript\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": false,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 4,\n        \"license\": null,\n        \"allow_forking\": false,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"topics\": [],\n        \"visibility\": \"private\",\n        \"forks\": 0,\n        \"open_issues\": 4,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"custom_properties\": {}\n    },\n    \"organization\": {\n        \"login\": \"firstmatecloud\",\n        \"id\": 169379507,\n        \"node_id\": \"O_kgDOChiGsw\",\n        \"url\": \"https://api.github.com/orgs/firstmatecloud\",\n        \"repos_url\": \"https://api.github.com/orgs/firstmatecloud/repos\",\n        \"events_url\": \"https://api.github.com/orgs/firstmatecloud/events\",\n        \"hooks_url\": \"https://api.github.com/orgs/firstmatecloud/hooks\",\n        \"issues_url\": \"https://api.github.com/orgs/firstmatecloud/issues\",\n        \"members_url\": \"https://api.github.com/orgs/firstmatecloud/members{/member}\",\n        \"public_members_url\": \"https://api.github.com/orgs/firstmatecloud/public_members{/member}\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n        \"description\": null\n    },\n    \"sender\": {\n        \"login\": \"WilmsJochen\",\n        \"id\": 49437403,\n        \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/WilmsJochen\",\n        \"html_url\": \"https://github.com/WilmsJochen\",\n        \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n        \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n        \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n        \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n    },\n    \"installation\": {\n        \"id\": 52347138,\n        \"node_id\": \"MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uNTIzNDcxMzg=\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/github/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"github",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ticket comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\":\"created\",\"issue\":{\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6\",\"repository_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\"labels_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/labels{/name}\",\"comments_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/comments\",\"events_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/events\",\"html_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager/issues/6\",\"id\":2385765166,\"node_id\":\"I_kwDOMIWkKM6OM-Mu\",\"number\":6,\"title\":\"implement all todos\",\"user\":{\"login\":\"WilmsJochen\",\"id\":49437403,\"node_id\":\"MDQ6VXNlcjQ5NDM3NDAz\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/49437403?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/WilmsJochen\",\"html_url\":\"https://github.com/WilmsJochen\",\"followers_url\":\"https://api.github.com/users/WilmsJochen/followers\",\"following_url\":\"https://api.github.com/users/WilmsJochen/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/WilmsJochen/subscriptions\",\"organizations_url\":\"https://api.github.com/users/WilmsJochen/orgs\",\"repos_url\":\"https://api.github.com/users/WilmsJochen/repos\",\"events_url\":\"https://api.github.com/users/WilmsJochen/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/WilmsJochen/received_events\",\"type\":\"User\",\"site_admin\":false},\"labels\":[],\"state\":\"open\",\"locked\":false,\"assignee\":null,\"assignees\":[],\"milestone\":null,\"comments\":1,\"created_at\":\"2024-07-02T09:39:25Z\",\"updated_at\":\"2024-07-02T09:40:38Z\",\"closed_at\":null,\"author_association\":\"CONTRIBUTOR\",\"active_lock_reason\":null,\"body\":null,\"reactions\":{\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"timeline_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/timeline\",\"performed_via_github_app\":null,\"state_reason\":null},\"comment\":{\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments/2202572992\",\"html_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager/issues/6#issuecomment-2202572992\",\"issue_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6\",\"id\":2202572992,\"node_id\":\"IC_kwDOMIWkKM6DSJjA\",\"user\":{\"login\":\"WilmsJochen\",\"id\":49437403,\"node_id\":\"MDQ6VXNlcjQ5NDM3NDAz\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/49437403?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/WilmsJochen\",\"html_url\":\"https://github.com/WilmsJochen\",\"followers_url\":\"https://api.github.com/users/WilmsJochen/followers\",\"following_url\":\"https://api.github.com/users/WilmsJochen/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/WilmsJochen/subscriptions\",\"organizations_url\":\"https://api.github.com/users/WilmsJochen/orgs\",\"repos_url\":\"https://api.github.com/users/WilmsJochen/repos\",\"events_url\":\"https://api.github.com/users/WilmsJochen/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/WilmsJochen/received_events\",\"type\":\"User\",\"site_admin\":false},\"created_at\":\"2024-07-02T09:40:37Z\",\"updated_at\":\"2024-07-02T09:40:37Z\",\"author_association\":\"CONTRIBUTOR\",\"body\":\"Let's add a comment\",\"reactions\":{\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments/2202572992/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"performed_via_github_app\":null},\"repository\":{\"id\":814064680,\"node_id\":\"R_kgDOMIWkKA\",\"name\":\"ms-nodejs-git-manager\",\"full_name\":\"firstmatecloud/ms-nodejs-git-manager\",\"private\":true,\"owner\":{\"login\":\"firstmatecloud\",\"id\":169379507,\"node_id\":\"O_kgDOChiGsw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/169379507?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/firstmatecloud\",\"html_url\":\"https://github.com/firstmatecloud\",\"followers_url\":\"https://api.github.com/users/firstmatecloud/followers\",\"following_url\":\"https://api.github.com/users/firstmatecloud/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/firstmatecloud/subscriptions\",\"organizations_url\":\"https://api.github.com/users/firstmatecloud/orgs\",\"repos_url\":\"https://api.github.com/users/firstmatecloud/repos\",\"events_url\":\"https://api.github.com/users/firstmatecloud/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/firstmatecloud/received_events\",\"type\":\"Organization\",\"site_admin\":false},\"html_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\"forks_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\"keys_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\"hooks_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\"issue_events_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\"assignees_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\"blobs_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\"stargazers_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\"contributors_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\"subscribers_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\"subscription_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\"commits_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\"archive_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\"issues_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\"created_at\":\"2024-06-12T09:18:30Z\",\"updated_at\":\"2024-07-02T09:09:29Z\",\"pushed_at\":\"2024-07-02T09:10:16Z\",\"git_url\":\"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\"ssh_url\":\"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\"clone_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\"svn_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\"homepage\":null,\"size\":106,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":true,\"has_wiki\":false,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":4,\"license\":null,\"allow_forking\":false,\"is_template\":false,\"web_commit_signoff_required\":false,\"topics\":[],\"visibility\":\"private\",\"forks\":0,\"open_issues\":4,\"watchers\":0,\"default_branch\":\"main\",\"custom_properties\":{}},\"organization\":{\"login\":\"firstmatecloud\",\"id\":169379507,\"node_id\":\"O_kgDOChiGsw\",\"url\":\"https://api.github.com/orgs/firstmatecloud\",\"repos_url\":\"https://api.github.com/orgs/firstmatecloud/repos\",\"events_url\":\"https://api.github.com/orgs/firstmatecloud/events\",\"hooks_url\":\"https://api.github.com/orgs/firstmatecloud/hooks\",\"issues_url\":\"https://api.github.com/orgs/firstmatecloud/issues\",\"members_url\":\"https://api.github.com/orgs/firstmatecloud/members{/member}\",\"public_members_url\":\"https://api.github.com/orgs/firstmatecloud/public_members{/member}\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/169379507?v=4\",\"description\":null},\"sender\":{\"login\":\"WilmsJochen\",\"id\":49437403,\"node_id\":\"MDQ6VXNlcjQ5NDM3NDAz\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/49437403?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/WilmsJochen\",\"html_url\":\"https://github.com/WilmsJochen\",\"followers_url\":\"https://api.github.com/users/WilmsJochen/followers\",\"following_url\":\"https://api.github.com/users/WilmsJochen/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/WilmsJochen/subscriptions\",\"organizations_url\":\"https://api.github.com/users/WilmsJochen/orgs\",\"repos_url\":\"https://api.github.com/users/WilmsJochen/repos\",\"events_url\":\"https://api.github.com/users/WilmsJochen/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/WilmsJochen/received_events\",\"type\":\"User\",\"site_admin\":false},\"installation\":{\"id\":52347138,\"node_id\":\"MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uNTIzNDcxMzg=\"}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/github/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"github",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ticket Updated",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\":\"edited\",\"issue\":{\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6\",\"repository_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\"labels_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/labels{/name}\",\"comments_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/comments\",\"events_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/events\",\"html_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager/issues/6\",\"id\":2385765166,\"node_id\":\"I_kwDOMIWkKM6OM-Mu\",\"number\":6,\"title\":\"implement all todos\",\"user\":{\"login\":\"WilmsJochen\",\"id\":49437403,\"node_id\":\"MDQ6VXNlcjQ5NDM3NDAz\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/49437403?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/WilmsJochen\",\"html_url\":\"https://github.com/WilmsJochen\",\"followers_url\":\"https://api.github.com/users/WilmsJochen/followers\",\"following_url\":\"https://api.github.com/users/WilmsJochen/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/WilmsJochen/subscriptions\",\"organizations_url\":\"https://api.github.com/users/WilmsJochen/orgs\",\"repos_url\":\"https://api.github.com/users/WilmsJochen/repos\",\"events_url\":\"https://api.github.com/users/WilmsJochen/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/WilmsJochen/received_events\",\"type\":\"User\",\"site_admin\":false},\"labels\":[],\"state\":\"open\",\"locked\":false,\"assignee\":null,\"assignees\":[],\"milestone\":null,\"comments\":1,\"created_at\":\"2024-07-02T09:39:25Z\",\"updated_at\":\"2024-07-02T09:41:44Z\",\"closed_at\":null,\"author_association\":\"CONTRIBUTOR\",\"active_lock_reason\":null,\"body\":\"Update ticket\",\"reactions\":{\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/reactions\",\"total_count\":0,\"+1\":0,\"-1\":0,\"laugh\":0,\"hooray\":0,\"confused\":0,\"heart\":0,\"rocket\":0,\"eyes\":0},\"timeline_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/6/timeline\",\"performed_via_github_app\":null,\"state_reason\":null},\"changes\":{\"body\":{\"from\":\"\"}},\"repository\":{\"id\":814064680,\"node_id\":\"R_kgDOMIWkKA\",\"name\":\"ms-nodejs-git-manager\",\"full_name\":\"firstmatecloud/ms-nodejs-git-manager\",\"private\":true,\"owner\":{\"login\":\"firstmatecloud\",\"id\":169379507,\"node_id\":\"O_kgDOChiGsw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/169379507?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/firstmatecloud\",\"html_url\":\"https://github.com/firstmatecloud\",\"followers_url\":\"https://api.github.com/users/firstmatecloud/followers\",\"following_url\":\"https://api.github.com/users/firstmatecloud/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/firstmatecloud/subscriptions\",\"organizations_url\":\"https://api.github.com/users/firstmatecloud/orgs\",\"repos_url\":\"https://api.github.com/users/firstmatecloud/repos\",\"events_url\":\"https://api.github.com/users/firstmatecloud/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/firstmatecloud/received_events\",\"type\":\"Organization\",\"site_admin\":false},\"html_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\"description\":null,\"fork\":false,\"url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\"forks_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\"keys_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\"hooks_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\"issue_events_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\"assignees_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\"blobs_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\"stargazers_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\"contributors_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\"subscribers_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\"subscription_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\"commits_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\"archive_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\"issues_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\"created_at\":\"2024-06-12T09:18:30Z\",\"updated_at\":\"2024-07-02T09:09:29Z\",\"pushed_at\":\"2024-07-02T09:10:16Z\",\"git_url\":\"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\"ssh_url\":\"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\"clone_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\"svn_url\":\"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\"homepage\":null,\"size\":106,\"stargazers_count\":0,\"watchers_count\":0,\"language\":\"JavaScript\",\"has_issues\":true,\"has_projects\":true,\"has_downloads\":true,\"has_wiki\":false,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":4,\"license\":null,\"allow_forking\":false,\"is_template\":false,\"web_commit_signoff_required\":false,\"topics\":[],\"visibility\":\"private\",\"forks\":0,\"open_issues\":4,\"watchers\":0,\"default_branch\":\"main\",\"custom_properties\":{}},\"organization\":{\"login\":\"firstmatecloud\",\"id\":169379507,\"node_id\":\"O_kgDOChiGsw\",\"url\":\"https://api.github.com/orgs/firstmatecloud\",\"repos_url\":\"https://api.github.com/orgs/firstmatecloud/repos\",\"events_url\":\"https://api.github.com/orgs/firstmatecloud/events\",\"hooks_url\":\"https://api.github.com/orgs/firstmatecloud/hooks\",\"issues_url\":\"https://api.github.com/orgs/firstmatecloud/issues\",\"members_url\":\"https://api.github.com/orgs/firstmatecloud/members{/member}\",\"public_members_url\":\"https://api.github.com/orgs/firstmatecloud/public_members{/member}\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/169379507?v=4\",\"description\":null},\"sender\":{\"login\":\"WilmsJochen\",\"id\":49437403,\"node_id\":\"MDQ6VXNlcjQ5NDM3NDAz\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/49437403?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/WilmsJochen\",\"html_url\":\"https://github.com/WilmsJochen\",\"followers_url\":\"https://api.github.com/users/WilmsJochen/followers\",\"following_url\":\"https://api.github.com/users/WilmsJochen/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/WilmsJochen/subscriptions\",\"organizations_url\":\"https://api.github.com/users/WilmsJochen/orgs\",\"repos_url\":\"https://api.github.com/users/WilmsJochen/repos\",\"events_url\":\"https://api.github.com/users/WilmsJochen/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/WilmsJochen/received_events\",\"type\":\"User\",\"site_admin\":false},\"installation\":{\"id\":52347138,\"node_id\":\"MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uNTIzNDcxMzg=\"}}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/github/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"github",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pr created",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n      \"action\": \"opened\",\n      \"number\": 18,\n      \"pull_request\": {\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18\",\n        \"id\": 1957535690,\n        \"node_id\": \"PR_kwDOMIWkKM50rZ_K\",\n        \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18\",\n        \"diff_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18.diff\",\n        \"patch_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18.patch\",\n        \"issue_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18\",\n        \"number\": 18,\n        \"state\": \"open\",\n        \"locked\": false,\n        \"title\": \"Jochen test branch\",\n        \"user\": {\n          \"login\": \"WilmsJochen\",\n          \"id\": 49437403,\n          \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/WilmsJochen\",\n          \"html_url\": \"https://github.com/WilmsJochen\",\n          \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n          \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n          \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n          \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n          \"type\": \"User\",\n          \"site_admin\": false\n        },\n        \"body\": null,\n        \"created_at\": \"2024-07-08T10:59:04Z\",\n        \"updated_at\": \"2024-07-08T10:59:04Z\",\n        \"closed_at\": null,\n        \"merged_at\": null,\n        \"merge_commit_sha\": null,\n        \"assignee\": null,\n        \"assignees\": [],\n        \"requested_reviewers\": [],\n        \"requested_teams\": [],\n        \"labels\": [],\n        \"milestone\": null,\n        \"draft\": false,\n        \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/commits\",\n        \"review_comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/comments\",\n        \"review_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/comments{/number}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18/comments\",\n        \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/3c797528d6700b44d54daa678aa76349c011bf18\",\n        \"head\": {\n          \"label\": \"firstmatecloud:jochen-test-branch\",\n          \"ref\": \"jochen-test-branch\",\n          \"sha\": \"3c797528d6700b44d54daa678aa76349c011bf18\",\n          \"user\": {\n            \"login\": \"firstmatecloud\",\n            \"id\": 169379507,\n            \"node_id\": \"O_kgDOChiGsw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/firstmatecloud\",\n            \"html_url\": \"https://github.com/firstmatecloud\",\n            \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n            \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n            \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n            \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n            \"type\": \"Organization\",\n            \"site_admin\": false\n          },\n          \"repo\": {\n            \"id\": 814064680,\n            \"node_id\": \"R_kgDOMIWkKA\",\n            \"name\": \"ms-nodejs-git-manager\",\n            \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n            \"private\": true,\n            \"owner\": {\n              \"login\": \"firstmatecloud\",\n              \"id\": 169379507,\n              \"node_id\": \"O_kgDOChiGsw\",\n              \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n              \"gravatar_id\": \"\",\n              \"url\": \"https://api.github.com/users/firstmatecloud\",\n              \"html_url\": \"https://github.com/firstmatecloud\",\n              \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n              \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n              \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n              \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n              \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n              \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n              \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n              \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n              \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n              \"type\": \"Organization\",\n              \"site_admin\": false\n            },\n            \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"description\": null,\n            \"fork\": false,\n            \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n            \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n            \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n            \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n            \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n            \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n            \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n            \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n            \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n            \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n            \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n            \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n            \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n            \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n            \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n            \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n            \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n            \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n            \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n            \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n            \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n            \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n            \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n            \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n            \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n            \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n            \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n            \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n            \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n            \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n            \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n            \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n            \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n            \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n            \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n            \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n            \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n            \"created_at\": \"2024-06-12T09:18:30Z\",\n            \"updated_at\": \"2024-07-08T10:53:50Z\",\n            \"pushed_at\": \"2024-07-08T10:59:04Z\",\n            \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n            \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"homepage\": null,\n            \"size\": 113,\n            \"stargazers_count\": 0,\n            \"watchers_count\": 0,\n            \"language\": \"JavaScript\",\n            \"has_issues\": true,\n            \"has_projects\": true,\n            \"has_downloads\": true,\n            \"has_wiki\": false,\n            \"has_pages\": false,\n            \"has_discussions\": false,\n            \"forks_count\": 0,\n            \"mirror_url\": null,\n            \"archived\": false,\n            \"disabled\": false,\n            \"open_issues_count\": 5,\n            \"license\": null,\n            \"allow_forking\": false,\n            \"is_template\": false,\n            \"web_commit_signoff_required\": false,\n            \"topics\": [],\n            \"visibility\": \"private\",\n            \"forks\": 0,\n            \"open_issues\": 5,\n            \"watchers\": 0,\n            \"default_branch\": \"main\",\n            \"allow_squash_merge\": true,\n            \"allow_merge_commit\": true,\n            \"allow_rebase_merge\": true,\n            \"allow_auto_merge\": false,\n            \"delete_branch_on_merge\": false,\n            \"allow_update_branch\": false,\n            \"use_squash_pr_title_as_default\": false,\n            \"squash_merge_commit_message\": \"COMMIT_MESSAGES\",\n            \"squash_merge_commit_title\": \"COMMIT_OR_PR_TITLE\",\n            \"merge_commit_message\": \"PR_TITLE\",\n            \"merge_commit_title\": \"MERGE_MESSAGE\"\n          }\n        },\n        \"base\": {\n          \"label\": \"firstmatecloud:main\",\n          \"ref\": \"main\",\n          \"sha\": \"02e3d10910acd7710a2d706c38caaee75f45d589\",\n          \"user\": {\n            \"login\": \"firstmatecloud\",\n            \"id\": 169379507,\n            \"node_id\": \"O_kgDOChiGsw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/firstmatecloud\",\n            \"html_url\": \"https://github.com/firstmatecloud\",\n            \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n            \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n            \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n            \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n            \"type\": \"Organization\",\n            \"site_admin\": false\n          },\n          \"repo\": {\n            \"id\": 814064680,\n            \"node_id\": \"R_kgDOMIWkKA\",\n            \"name\": \"ms-nodejs-git-manager\",\n            \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n            \"private\": true,\n            \"owner\": {\n              \"login\": \"firstmatecloud\",\n              \"id\": 169379507,\n              \"node_id\": \"O_kgDOChiGsw\",\n              \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n              \"gravatar_id\": \"\",\n              \"url\": \"https://api.github.com/users/firstmatecloud\",\n              \"html_url\": \"https://github.com/firstmatecloud\",\n              \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n              \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n              \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n              \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n              \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n              \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n              \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n              \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n              \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n              \"type\": \"Organization\",\n              \"site_admin\": false\n            },\n            \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"description\": null,\n            \"fork\": false,\n            \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n            \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n            \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n            \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n            \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n            \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n            \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n            \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n            \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n            \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n            \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n            \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n            \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n            \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n            \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n            \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n            \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n            \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n            \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n            \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n            \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n            \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n            \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n            \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n            \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n            \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n            \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n            \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n            \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n            \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n            \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n            \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n            \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n            \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n            \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n            \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n            \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n            \"created_at\": \"2024-06-12T09:18:30Z\",\n            \"updated_at\": \"2024-07-08T10:53:50Z\",\n            \"pushed_at\": \"2024-07-08T10:59:04Z\",\n            \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n            \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"homepage\": null,\n            \"size\": 113,\n            \"stargazers_count\": 0,\n            \"watchers_count\": 0,\n            \"language\": \"JavaScript\",\n            \"has_issues\": true,\n            \"has_projects\": true,\n            \"has_downloads\": true,\n            \"has_wiki\": false,\n            \"has_pages\": false,\n            \"has_discussions\": false,\n            \"forks_count\": 0,\n            \"mirror_url\": null,\n            \"archived\": false,\n            \"disabled\": false,\n            \"open_issues_count\": 5,\n            \"license\": null,\n            \"allow_forking\": false,\n            \"is_template\": false,\n            \"web_commit_signoff_required\": false,\n            \"topics\": [],\n            \"visibility\": \"private\",\n            \"forks\": 0,\n            \"open_issues\": 5,\n            \"watchers\": 0,\n            \"default_branch\": \"main\",\n            \"allow_squash_merge\": true,\n            \"allow_merge_commit\": true,\n            \"allow_rebase_merge\": true,\n            \"allow_auto_merge\": false,\n            \"delete_branch_on_merge\": false,\n            \"allow_update_branch\": false,\n            \"use_squash_pr_title_as_default\": false,\n            \"squash_merge_commit_message\": \"COMMIT_MESSAGES\",\n            \"squash_merge_commit_title\": \"COMMIT_OR_PR_TITLE\",\n            \"merge_commit_message\": \"PR_TITLE\",\n            \"merge_commit_title\": \"MERGE_MESSAGE\"\n          }\n        },\n        \"_links\": {\n          \"self\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18\"\n          },\n          \"html\": {\n            \"href\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18\"\n          },\n          \"issue\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18\"\n          },\n          \"comments\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18/comments\"\n          },\n          \"review_comments\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/comments\"\n          },\n          \"review_comment\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/comments{/number}\"\n          },\n          \"commits\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/commits\"\n          },\n          \"statuses\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/3c797528d6700b44d54daa678aa76349c011bf18\"\n          }\n        },\n        \"author_association\": \"CONTRIBUTOR\",\n        \"auto_merge\": null,\n        \"active_lock_reason\": null,\n        \"merged\": false,\n        \"mergeable\": null,\n        \"rebaseable\": null,\n        \"mergeable_state\": \"unknown\",\n        \"merged_by\": null,\n        \"comments\": 0,\n        \"review_comments\": 0,\n        \"maintainer_can_modify\": false,\n        \"commits\": 2,\n        \"additions\": 177,\n        \"deletions\": 69,\n        \"changed_files\": 17\n      },\n      \"repository\": {\n        \"id\": 814064680,\n        \"node_id\": \"R_kgDOMIWkKA\",\n        \"name\": \"ms-nodejs-git-manager\",\n        \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n        \"private\": true,\n        \"owner\": {\n          \"login\": \"firstmatecloud\",\n          \"id\": 169379507,\n          \"node_id\": \"O_kgDOChiGsw\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/firstmatecloud\",\n          \"html_url\": \"https://github.com/firstmatecloud\",\n          \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n          \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n          \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n          \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n          \"type\": \"Organization\",\n          \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n        \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n        \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n        \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n        \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n        \"created_at\": \"2024-06-12T09:18:30Z\",\n        \"updated_at\": \"2024-07-08T10:53:50Z\",\n        \"pushed_at\": \"2024-07-08T10:59:04Z\",\n        \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n        \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n        \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n        \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n        \"homepage\": null,\n        \"size\": 113,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"JavaScript\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": false,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 5,\n        \"license\": null,\n        \"allow_forking\": false,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"topics\": [],\n        \"visibility\": \"private\",\n        \"forks\": 0,\n        \"open_issues\": 5,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"custom_properties\": {}\n      },\n      \"organization\": {\n        \"login\": \"firstmatecloud\",\n        \"id\": 169379507,\n        \"node_id\": \"O_kgDOChiGsw\",\n        \"url\": \"https://api.github.com/orgs/firstmatecloud\",\n        \"repos_url\": \"https://api.github.com/orgs/firstmatecloud/repos\",\n        \"events_url\": \"https://api.github.com/orgs/firstmatecloud/events\",\n        \"hooks_url\": \"https://api.github.com/orgs/firstmatecloud/hooks\",\n        \"issues_url\": \"https://api.github.com/orgs/firstmatecloud/issues\",\n        \"members_url\": \"https://api.github.com/orgs/firstmatecloud/members{/member}\",\n        \"public_members_url\": \"https://api.github.com/orgs/firstmatecloud/public_members{/member}\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n        \"description\": null\n      },\n      \"sender\": {\n        \"login\": \"WilmsJochen\",\n        \"id\": 49437403,\n        \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/WilmsJochen\",\n        \"html_url\": \"https://github.com/WilmsJochen\",\n        \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n        \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n        \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n        \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n      },\n      \"installation\": {\n        \"id\": 52347138,\n        \"node_id\": \"MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uNTIzNDcxMzg=\"\n      }\n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/github/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"github",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pr edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"action\": \"edited\",\n      \"number\": 18,\n      \"pull_request\": {\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18\",\n        \"id\": 1957535690,\n        \"node_id\": \"PR_kwDOMIWkKM50rZ_K\",\n        \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18\",\n        \"diff_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18.diff\",\n        \"patch_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18.patch\",\n        \"issue_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18\",\n        \"number\": 18,\n        \"state\": \"open\",\n        \"locked\": false,\n        \"title\": \"Jochen test branch\",\n        \"user\": {\n          \"login\": \"WilmsJochen\",\n          \"id\": 49437403,\n          \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/WilmsJochen\",\n          \"html_url\": \"https://github.com/WilmsJochen\",\n          \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n          \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n          \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n          \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n          \"type\": \"User\",\n          \"site_admin\": false\n        },\n        \"body\": \"@firstmate\",\n        \"created_at\": \"2024-07-08T10:59:04Z\",\n        \"updated_at\": \"2024-07-08T11:01:26Z\",\n        \"closed_at\": null,\n        \"merged_at\": null,\n        \"merge_commit_sha\": null,\n        \"assignee\": null,\n        \"assignees\": [],\n        \"requested_reviewers\": [],\n        \"requested_teams\": [],\n        \"labels\": [],\n        \"milestone\": null,\n        \"draft\": false,\n        \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/commits\",\n        \"review_comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/comments\",\n        \"review_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/comments{/number}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18/comments\",\n        \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/3c797528d6700b44d54daa678aa76349c011bf18\",\n        \"head\": {\n          \"label\": \"firstmatecloud:jochen-test-branch\",\n          \"ref\": \"jochen-test-branch\",\n          \"sha\": \"3c797528d6700b44d54daa678aa76349c011bf18\",\n          \"user\": {\n            \"login\": \"firstmatecloud\",\n            \"id\": 169379507,\n            \"node_id\": \"O_kgDOChiGsw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/firstmatecloud\",\n            \"html_url\": \"https://github.com/firstmatecloud\",\n            \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n            \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n            \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n            \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n            \"type\": \"Organization\",\n            \"site_admin\": false\n          },\n          \"repo\": {\n            \"id\": 814064680,\n            \"node_id\": \"R_kgDOMIWkKA\",\n            \"name\": \"ms-nodejs-git-manager\",\n            \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n            \"private\": true,\n            \"owner\": {\n              \"login\": \"firstmatecloud\",\n              \"id\": 169379507,\n              \"node_id\": \"O_kgDOChiGsw\",\n              \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n              \"gravatar_id\": \"\",\n              \"url\": \"https://api.github.com/users/firstmatecloud\",\n              \"html_url\": \"https://github.com/firstmatecloud\",\n              \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n              \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n              \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n              \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n              \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n              \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n              \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n              \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n              \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n              \"type\": \"Organization\",\n              \"site_admin\": false\n            },\n            \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"description\": null,\n            \"fork\": false,\n            \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n            \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n            \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n            \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n            \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n            \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n            \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n            \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n            \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n            \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n            \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n            \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n            \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n            \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n            \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n            \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n            \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n            \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n            \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n            \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n            \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n            \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n            \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n            \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n            \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n            \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n            \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n            \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n            \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n            \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n            \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n            \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n            \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n            \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n            \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n            \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n            \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n            \"created_at\": \"2024-06-12T09:18:30Z\",\n            \"updated_at\": \"2024-07-08T10:53:50Z\",\n            \"pushed_at\": \"2024-07-08T10:59:04Z\",\n            \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n            \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"homepage\": null,\n            \"size\": 113,\n            \"stargazers_count\": 0,\n            \"watchers_count\": 0,\n            \"language\": \"JavaScript\",\n            \"has_issues\": true,\n            \"has_projects\": true,\n            \"has_downloads\": true,\n            \"has_wiki\": false,\n            \"has_pages\": false,\n            \"has_discussions\": false,\n            \"forks_count\": 0,\n            \"mirror_url\": null,\n            \"archived\": false,\n            \"disabled\": false,\n            \"open_issues_count\": 5,\n            \"license\": null,\n            \"allow_forking\": false,\n            \"is_template\": false,\n            \"web_commit_signoff_required\": false,\n            \"topics\": [],\n            \"visibility\": \"private\",\n            \"forks\": 0,\n            \"open_issues\": 5,\n            \"watchers\": 0,\n            \"default_branch\": \"main\",\n            \"allow_squash_merge\": true,\n            \"allow_merge_commit\": true,\n            \"allow_rebase_merge\": true,\n            \"allow_auto_merge\": false,\n            \"delete_branch_on_merge\": false,\n            \"allow_update_branch\": false,\n            \"use_squash_pr_title_as_default\": false,\n            \"squash_merge_commit_message\": \"COMMIT_MESSAGES\",\n            \"squash_merge_commit_title\": \"COMMIT_OR_PR_TITLE\",\n            \"merge_commit_message\": \"PR_TITLE\",\n            \"merge_commit_title\": \"MERGE_MESSAGE\"\n          }\n        },\n        \"base\": {\n          \"label\": \"firstmatecloud:main\",\n          \"ref\": \"main\",\n          \"sha\": \"02e3d10910acd7710a2d706c38caaee75f45d589\",\n          \"user\": {\n            \"login\": \"firstmatecloud\",\n            \"id\": 169379507,\n            \"node_id\": \"O_kgDOChiGsw\",\n            \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n            \"gravatar_id\": \"\",\n            \"url\": \"https://api.github.com/users/firstmatecloud\",\n            \"html_url\": \"https://github.com/firstmatecloud\",\n            \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n            \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n            \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n            \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n            \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n            \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n            \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n            \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n            \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n            \"type\": \"Organization\",\n            \"site_admin\": false\n          },\n          \"repo\": {\n            \"id\": 814064680,\n            \"node_id\": \"R_kgDOMIWkKA\",\n            \"name\": \"ms-nodejs-git-manager\",\n            \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n            \"private\": true,\n            \"owner\": {\n              \"login\": \"firstmatecloud\",\n              \"id\": 169379507,\n              \"node_id\": \"O_kgDOChiGsw\",\n              \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n              \"gravatar_id\": \"\",\n              \"url\": \"https://api.github.com/users/firstmatecloud\",\n              \"html_url\": \"https://github.com/firstmatecloud\",\n              \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n              \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n              \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n              \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n              \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n              \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n              \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n              \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n              \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n              \"type\": \"Organization\",\n              \"site_admin\": false\n            },\n            \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"description\": null,\n            \"fork\": false,\n            \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n            \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n            \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n            \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n            \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n            \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n            \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n            \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n            \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n            \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n            \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n            \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n            \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n            \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n            \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n            \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n            \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n            \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n            \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n            \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n            \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n            \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n            \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n            \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n            \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n            \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n            \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n            \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n            \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n            \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n            \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n            \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n            \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n            \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n            \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n            \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n            \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n            \"created_at\": \"2024-06-12T09:18:30Z\",\n            \"updated_at\": \"2024-07-08T10:53:50Z\",\n            \"pushed_at\": \"2024-07-08T10:59:04Z\",\n            \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n            \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n            \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n            \"homepage\": null,\n            \"size\": 113,\n            \"stargazers_count\": 0,\n            \"watchers_count\": 0,\n            \"language\": \"JavaScript\",\n            \"has_issues\": true,\n            \"has_projects\": true,\n            \"has_downloads\": true,\n            \"has_wiki\": false,\n            \"has_pages\": false,\n            \"has_discussions\": false,\n            \"forks_count\": 0,\n            \"mirror_url\": null,\n            \"archived\": false,\n            \"disabled\": false,\n            \"open_issues_count\": 5,\n            \"license\": null,\n            \"allow_forking\": false,\n            \"is_template\": false,\n            \"web_commit_signoff_required\": false,\n            \"topics\": [],\n            \"visibility\": \"private\",\n            \"forks\": 0,\n            \"open_issues\": 5,\n            \"watchers\": 0,\n            \"default_branch\": \"main\",\n            \"allow_squash_merge\": true,\n            \"allow_merge_commit\": true,\n            \"allow_rebase_merge\": true,\n            \"allow_auto_merge\": false,\n            \"delete_branch_on_merge\": false,\n            \"allow_update_branch\": false,\n            \"use_squash_pr_title_as_default\": false,\n            \"squash_merge_commit_message\": \"COMMIT_MESSAGES\",\n            \"squash_merge_commit_title\": \"COMMIT_OR_PR_TITLE\",\n            \"merge_commit_message\": \"PR_TITLE\",\n            \"merge_commit_title\": \"MERGE_MESSAGE\"\n          }\n        },\n        \"_links\": {\n          \"self\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18\"\n          },\n          \"html\": {\n            \"href\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager/pull/18\"\n          },\n          \"issue\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18\"\n          },\n          \"comments\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/18/comments\"\n          },\n          \"review_comments\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/comments\"\n          },\n          \"review_comment\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/comments{/number}\"\n          },\n          \"commits\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls/18/commits\"\n          },\n          \"statuses\": {\n            \"href\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/3c797528d6700b44d54daa678aa76349c011bf18\"\n          }\n        },\n        \"author_association\": \"CONTRIBUTOR\",\n        \"auto_merge\": null,\n        \"active_lock_reason\": null,\n        \"merged\": false,\n        \"mergeable\": false,\n        \"rebaseable\": false,\n        \"mergeable_state\": \"dirty\",\n        \"merged_by\": null,\n        \"comments\": 0,\n        \"review_comments\": 0,\n        \"maintainer_can_modify\": false,\n        \"commits\": 2,\n        \"additions\": 177,\n        \"deletions\": 69,\n        \"changed_files\": 17\n      },\n      \"changes\": {\n        \"body\": {\n          \"from\": \"\"\n        }\n      },\n      \"repository\": {\n        \"id\": 814064680,\n        \"node_id\": \"R_kgDOMIWkKA\",\n        \"name\": \"ms-nodejs-git-manager\",\n        \"full_name\": \"firstmatecloud/ms-nodejs-git-manager\",\n        \"private\": true,\n        \"owner\": {\n          \"login\": \"firstmatecloud\",\n          \"id\": 169379507,\n          \"node_id\": \"O_kgDOChiGsw\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/firstmatecloud\",\n          \"html_url\": \"https://github.com/firstmatecloud\",\n          \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n          \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n          \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n          \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n          \"type\": \"Organization\",\n          \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager\",\n        \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/forks\",\n        \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/events\",\n        \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/merges\",\n        \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-nodejs-git-manager/deployments\",\n        \"created_at\": \"2024-06-12T09:18:30Z\",\n        \"updated_at\": \"2024-07-08T10:53:50Z\",\n        \"pushed_at\": \"2024-07-08T10:59:04Z\",\n        \"git_url\": \"git://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n        \"ssh_url\": \"git@github.com:firstmatecloud/ms-nodejs-git-manager.git\",\n        \"clone_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager.git\",\n        \"svn_url\": \"https://github.com/firstmatecloud/ms-nodejs-git-manager\",\n        \"homepage\": null,\n        \"size\": 113,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"JavaScript\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": false,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 5,\n        \"license\": null,\n        \"allow_forking\": false,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"topics\": [],\n        \"visibility\": \"private\",\n        \"forks\": 0,\n        \"open_issues\": 5,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"custom_properties\": {}\n      },\n      \"organization\": {\n        \"login\": \"firstmatecloud\",\n        \"id\": 169379507,\n        \"node_id\": \"O_kgDOChiGsw\",\n        \"url\": \"https://api.github.com/orgs/firstmatecloud\",\n        \"repos_url\": \"https://api.github.com/orgs/firstmatecloud/repos\",\n        \"events_url\": \"https://api.github.com/orgs/firstmatecloud/events\",\n        \"hooks_url\": \"https://api.github.com/orgs/firstmatecloud/hooks\",\n        \"issues_url\": \"https://api.github.com/orgs/firstmatecloud/issues\",\n        \"members_url\": \"https://api.github.com/orgs/firstmatecloud/members{/member}\",\n        \"public_members_url\": \"https://api.github.com/orgs/firstmatecloud/public_members{/member}\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n        \"description\": null\n      },\n      \"sender\": {\n        \"login\": \"WilmsJochen\",\n        \"id\": 49437403,\n        \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/WilmsJochen\",\n        \"html_url\": \"https://github.com/WilmsJochen\",\n        \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n        \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n        \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n        \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n      },\n      \"installation\": {\n        \"id\": 52347138,\n        \"node_id\": \"MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uNTIzNDcxMzg=\"\n      }\n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/github/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"github",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pr comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"action\": \"created\",\n      \"issue\": {\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3\",\n        \"repository_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service\",\n        \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3/labels{/name}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3/comments\",\n        \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3/events\",\n        \"html_url\": \"https://github.com/firstmatecloud/ms-python-ai-service/pull/3\",\n        \"id\": 2403341444,\n        \"node_id\": \"PR_kwDOMJRqdM51GsxB\",\n        \"number\": 3,\n        \"title\": \"docker-update-e0eaaa8e\",\n        \"user\": {\n          \"login\": \"firstmatebot[bot]\",\n          \"id\": 172487638,\n          \"node_id\": \"BOT_kgDOCkfz1g\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/in/919451?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D\",\n          \"html_url\": \"https://github.com/apps/firstmatebot\",\n          \"followers_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/followers\",\n          \"following_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/orgs\",\n          \"repos_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/repos\",\n          \"events_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/firstmatebot%5Bbot%5D/received_events\",\n          \"type\": \"Bot\",\n          \"site_admin\": false\n        },\n        \"labels\": [],\n        \"state\": \"open\",\n        \"locked\": false,\n        \"assignee\": null,\n        \"assignees\": [],\n        \"milestone\": null,\n        \"comments\": 1,\n        \"created_at\": \"2024-07-11T14:32:17Z\",\n        \"updated_at\": \"2024-07-11T14:39:40Z\",\n        \"closed_at\": null,\n        \"author_association\": \"NONE\",\n        \"active_lock_reason\": null,\n        \"draft\": false,\n        \"pull_request\": {\n          \"url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/pulls/3\",\n          \"html_url\": \"https://github.com/firstmatecloud/ms-python-ai-service/pull/3\",\n          \"diff_url\": \"https://github.com/firstmatecloud/ms-python-ai-service/pull/3.diff\",\n          \"patch_url\": \"https://github.com/firstmatecloud/ms-python-ai-service/pull/3.patch\",\n          \"merged_at\": null\n        },\n        \"body\": \"### Dockerfile Optimization\\n\\nThis PR introduces several optimizations to the Dockerfile to enhance security, reduce image size, and follow best practices:\\n\\n1. **Base Image Change**: Switched from `python:3.10-slim-buster` to `python:3.10-alpine` for a smaller and more secure image.\\n2. **Chained RUN Commands**: Combined multiple `RUN` commands into a single layer to reduce image size and improve build speed.\\n3. **Use of COPY Instead of ADD**: Ensured the use of `COPY` for better clarity and predictability.\\n4. **Non-Root User**: Added a non-root user to enhance security.\\n5. **Multi-Stage Build**: Introduced a multi-stage build to separate the build environment from the runtime environment.\\n6. **.dockerignore**: Added a `.dockerignore` file to exclude unnecessary files from the build context.\\n\\nThese changes collectively improve the security, efficiency, and maintainability of the Docker image.\",\n        \"reactions\": {\n          \"url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3/reactions\",\n          \"total_count\": 0,\n          \"+1\": 0,\n          \"-1\": 0,\n          \"laugh\": 0,\n          \"hooray\": 0,\n          \"confused\": 0,\n          \"heart\": 0,\n          \"rocket\": 0,\n          \"eyes\": 0\n        },\n        \"timeline_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3/timeline\",\n        \"performed_via_github_app\": null,\n        \"state_reason\": null\n      },\n      \"comment\": {\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/comments/2223115504\",\n        \"html_url\": \"https://github.com/firstmatecloud/ms-python-ai-service/pull/3#issuecomment-2223115504\",\n        \"issue_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/3\",\n        \"id\": 2223115504,\n        \"node_id\": \"IC_kwDOMJRqdM6Eggzw\",\n        \"user\": {\n          \"login\": \"WilmsJochen\",\n          \"id\": 49437403,\n          \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/WilmsJochen\",\n          \"html_url\": \"https://github.com/WilmsJochen\",\n          \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n          \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n          \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n          \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n          \"type\": \"User\",\n          \"site_admin\": false\n        },\n        \"created_at\": \"2024-07-11T14:39:39Z\",\n        \"updated_at\": \"2024-07-11T14:39:39Z\",\n        \"author_association\": \"CONTRIBUTOR\",\n        \"body\": \"@firstmate i want to see the comment webhook data.\",\n        \"reactions\": {\n          \"url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/comments/2223115504/reactions\",\n          \"total_count\": 0,\n          \"+1\": 0,\n          \"-1\": 0,\n          \"laugh\": 0,\n          \"hooray\": 0,\n          \"confused\": 0,\n          \"heart\": 0,\n          \"rocket\": 0,\n          \"eyes\": 0\n        },\n        \"performed_via_github_app\": null\n      },\n      \"repository\": {\n        \"id\": 815032948,\n        \"node_id\": \"R_kgDOMJRqdA\",\n        \"name\": \"ms-python-ai-service\",\n        \"full_name\": \"firstmatecloud/ms-python-ai-service\",\n        \"private\": true,\n        \"owner\": {\n          \"login\": \"firstmatecloud\",\n          \"id\": 169379507,\n          \"node_id\": \"O_kgDOChiGsw\",\n          \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n          \"gravatar_id\": \"\",\n          \"url\": \"https://api.github.com/users/firstmatecloud\",\n          \"html_url\": \"https://github.com/firstmatecloud\",\n          \"followers_url\": \"https://api.github.com/users/firstmatecloud/followers\",\n          \"following_url\": \"https://api.github.com/users/firstmatecloud/following{/other_user}\",\n          \"gists_url\": \"https://api.github.com/users/firstmatecloud/gists{/gist_id}\",\n          \"starred_url\": \"https://api.github.com/users/firstmatecloud/starred{/owner}{/repo}\",\n          \"subscriptions_url\": \"https://api.github.com/users/firstmatecloud/subscriptions\",\n          \"organizations_url\": \"https://api.github.com/users/firstmatecloud/orgs\",\n          \"repos_url\": \"https://api.github.com/users/firstmatecloud/repos\",\n          \"events_url\": \"https://api.github.com/users/firstmatecloud/events{/privacy}\",\n          \"received_events_url\": \"https://api.github.com/users/firstmatecloud/received_events\",\n          \"type\": \"Organization\",\n          \"site_admin\": false\n        },\n        \"html_url\": \"https://github.com/firstmatecloud/ms-python-ai-service\",\n        \"description\": null,\n        \"fork\": false,\n        \"url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service\",\n        \"forks_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/forks\",\n        \"keys_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/keys{/key_id}\",\n        \"collaborators_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/collaborators{/collaborator}\",\n        \"teams_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/teams\",\n        \"hooks_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/hooks\",\n        \"issue_events_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/events{/number}\",\n        \"events_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/events\",\n        \"assignees_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/assignees{/user}\",\n        \"branches_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/branches{/branch}\",\n        \"tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/tags\",\n        \"blobs_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/git/blobs{/sha}\",\n        \"git_tags_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/git/tags{/sha}\",\n        \"git_refs_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/git/refs{/sha}\",\n        \"trees_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/git/trees{/sha}\",\n        \"statuses_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/statuses/{sha}\",\n        \"languages_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/languages\",\n        \"stargazers_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/stargazers\",\n        \"contributors_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/contributors\",\n        \"subscribers_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/subscribers\",\n        \"subscription_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/subscription\",\n        \"commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/commits{/sha}\",\n        \"git_commits_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/git/commits{/sha}\",\n        \"comments_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/comments{/number}\",\n        \"issue_comment_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues/comments{/number}\",\n        \"contents_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/contents/{+path}\",\n        \"compare_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/compare/{base}...{head}\",\n        \"merges_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/merges\",\n        \"archive_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/{archive_format}{/ref}\",\n        \"downloads_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/downloads\",\n        \"issues_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/issues{/number}\",\n        \"pulls_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/pulls{/number}\",\n        \"milestones_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/milestones{/number}\",\n        \"notifications_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/notifications{?since,all,participating}\",\n        \"labels_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/labels{/name}\",\n        \"releases_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/releases{/id}\",\n        \"deployments_url\": \"https://api.github.com/repos/firstmatecloud/ms-python-ai-service/deployments\",\n        \"created_at\": \"2024-06-14T07:56:14Z\",\n        \"updated_at\": \"2024-07-11T14:30:59Z\",\n        \"pushed_at\": \"2024-07-11T14:33:30Z\",\n        \"git_url\": \"git://github.com/firstmatecloud/ms-python-ai-service.git\",\n        \"ssh_url\": \"git@github.com:firstmatecloud/ms-python-ai-service.git\",\n        \"clone_url\": \"https://github.com/firstmatecloud/ms-python-ai-service.git\",\n        \"svn_url\": \"https://github.com/firstmatecloud/ms-python-ai-service\",\n        \"homepage\": null,\n        \"size\": 140,\n        \"stargazers_count\": 0,\n        \"watchers_count\": 0,\n        \"language\": \"Python\",\n        \"has_issues\": true,\n        \"has_projects\": true,\n        \"has_downloads\": true,\n        \"has_wiki\": false,\n        \"has_pages\": false,\n        \"has_discussions\": false,\n        \"forks_count\": 0,\n        \"mirror_url\": null,\n        \"archived\": false,\n        \"disabled\": false,\n        \"open_issues_count\": 3,\n        \"license\": null,\n        \"allow_forking\": false,\n        \"is_template\": false,\n        \"web_commit_signoff_required\": false,\n        \"topics\": [],\n        \"visibility\": \"private\",\n        \"forks\": 0,\n        \"open_issues\": 3,\n        \"watchers\": 0,\n        \"default_branch\": \"main\",\n        \"custom_properties\": {}\n      },\n      \"organization\": {\n        \"login\": \"firstmatecloud\",\n        \"id\": 169379507,\n        \"node_id\": \"O_kgDOChiGsw\",\n        \"url\": \"https://api.github.com/orgs/firstmatecloud\",\n        \"repos_url\": \"https://api.github.com/orgs/firstmatecloud/repos\",\n        \"events_url\": \"https://api.github.com/orgs/firstmatecloud/events\",\n        \"hooks_url\": \"https://api.github.com/orgs/firstmatecloud/hooks\",\n        \"issues_url\": \"https://api.github.com/orgs/firstmatecloud/issues\",\n        \"members_url\": \"https://api.github.com/orgs/firstmatecloud/members{/member}\",\n        \"public_members_url\": \"https://api.github.com/orgs/firstmatecloud/public_members{/member}\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/169379507?v=4\",\n        \"description\": null\n      },\n      \"sender\": {\n        \"login\": \"WilmsJochen\",\n        \"id\": 49437403,\n        \"node_id\": \"MDQ6VXNlcjQ5NDM3NDAz\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/49437403?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/WilmsJochen\",\n        \"html_url\": \"https://github.com/WilmsJochen\",\n        \"followers_url\": \"https://api.github.com/users/WilmsJochen/followers\",\n        \"following_url\": \"https://api.github.com/users/WilmsJochen/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/WilmsJochen/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/WilmsJochen/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/WilmsJochen/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/WilmsJochen/orgs\",\n        \"repos_url\": \"https://api.github.com/users/WilmsJochen/repos\",\n        \"events_url\": \"https://api.github.com/users/WilmsJochen/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/WilmsJochen/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n      },\n      \"installation\": {\n        \"id\": 52347138,\n        \"node_id\": \"MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uNTIzNDcxMzg=\"\n      }\n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/github/webhook",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"github",
+								"webhook"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "create new ticket",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"ticketId\", jsonData._id);",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Add service bus\",\n    \"description\": \"@firstmate Create a new terraform module in the test infra repo to deploy a service bus namespace and a queue.\",\n    \"orgId\": \"{{orgId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/tickets",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search ticket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/tickets?orgId={{orgId}}&id=668f8bfcdd3cc97e2f05c10c",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tickets"
+							],
+							"query": [
+								{
+									"key": "orgId",
+									"value": "{{orgId}}"
+								},
+								{
+									"key": "status",
+									"value": "open",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "{{ticketId}}",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "668f8bfcdd3cc97e2f05c10c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create comment on TIcket",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"comment\": \"Commented through postman\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/tickets/{{ticketId}}/comment",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tickets",
+								"{{ticketId}}",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create pr on TIcket",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"prId\", jsonData._id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"branch\": \"jochen-test\",\n  \"description\": \"Update readme\", \n  \"repoId\":\"azuredev/desyco/test/test-infra-terraform\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/tickets/{{ticketId}}/pr",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tickets",
+								"{{ticketId}}",
+								"pr"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "prs",
+			"item": [
+				{
+					"name": "create pr on ticket.",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"prId\", jsonData._id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"jochen test pr\",\n    \"branch\": \"jochen-test-branch\",\n    \"description\": \"This is a branch purely created to test\",\n    \"orgId\": \"667bcfa43373307bae3bf4e6\",\n    \"repoId\": \"github/firstmatecloud/ms-nodejs-git-manager\",\n    \"ticketId\": \"{{ticketId}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/prs",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search pr",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/tickets?orgId={{orgId}}&status=open",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"tickets"
+							],
+							"query": [
+								{
+									"key": "orgId",
+									"value": "{{orgId}}"
+								},
+								{
+									"key": "status",
+									"value": "open"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create comment on PR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"comment\": \"Commented through postman\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/prs/{{prId}}/comment",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prs",
+								"{{prId}}",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create comment on PR Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/prs/{{prId}}",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prs",
+								"{{prId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "jira",
+			"item": [
+				{
+					"name": "Get post-redirect page",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "callback",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"key\": \"firstmate-jira-bot\",\n    \"clientKey\": \"f9c2eaee-6e24-3fa3-9c69-6db1d365352f\",\n    \"publicKey\": \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCaha67TBIWXi/5hLkvCPffZyaI+UUaGl+/zWE1+/K12FPCgKDgvSdq5lv1dK0r2W+zWz8tukO7e49qvTo1PD6lWaMA44u+WyEwtHe6fu2aX0nqwfHAj1EXrgZPEHzDQseHKWL7CDR36UElP4e0QtVehRwe3+BV366/5QYi4iQO0wIDAQAB\",\n    \"sharedSecret\": \"ATCOxdKDrSLToaEDna_Fx9o4rO_vH_Ltls5990ieYeWoPby-H5v-uOX-AJTIGdOKr03QLoM4SM8Tlsf_vxCl-QxPeQ78AE8BFA\",\n    \"serverVersion\": \"100258\",\n    \"pluginsVersion\": \"1001.0.0-SNAPSHOT\",\n    \"baseUrl\": \"https://firstmatecloud.atlassian.net\",\n    \"displayUrl\": \"https://firstmatecloud.atlassian.net\",\n    \"productType\": \"jira\",\n    \"description\": \"Atlassian JIRA at https://firstmatecloud.atlassian.net \",\n    \"eventType\": \"installed\",\n    \"displayUrlServicedeskHelpCenter\": \"https://firstmatecloud.atlassian.net\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/provider/jira/callback",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"git",
+								"provider",
+								"jira",
+								"callback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "init",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkUwcGlwcnJXZlprYzFDMUJJaG4xQyJ9.eyJpc3MiOiJodHRwczovL2F1dGguZmlyc3RtYXRlLmNsb3VkLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTEwNjU3NDQ2MTk1ODM3OTI2NTg2IiwiYXVkIjpbImh0dHBzOi8vY29uc29sZS5maXJzdG1hdGUuY2xvdWQvYXBpIiwiaHR0cHM6Ly9maXJzdG1hdGUuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTcyMDg4Nzc3MywiZXhwIjoxNzIwOTc0MTczLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXpwIjoiWGI3N2ZiMXBtbUxTTVhlZUNDV2d2NXAyTHA2RzdEUUIifQ.EIMenFkF5DCXF84SJPVn9gA46FTaou4jQY9DybjQknXts_aC9EfpDGq9V-xIvRDszujeouHvukUMcPnRnZrmpYxSXsV3mJ5LDOyfSBOq3MLltEAizbYKCWcbo5DCSAUfZWfIfs5HGEb1OYgUeOkWmVLOX9TTFlclgTgNGd656o3ydkiZZn-qRjeTKsIVWSFCJ1c9JkcpFdYeNJG1_smhVDA0m1JfkVjszJZTSEG9SVTwWG5caIgx_Hy0arvmQZcZDDgX0ueHUTANvxofmI6lwD9pSyV1KdbpkbbYQs-vvyx15ydYhDt0_av3vTQicRu183kEa4A_DFF8VqkrT04-JA",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"jira-app\",\n  \"resourceName\": \"jira-app\",\n  \"provider\": \"jira\",\n  \"resourceDetails\": {\n    \"jwt\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3MTIwMjA6MTkyMTNiYjYtYjg1Ny00NTliLTg0OTUtYTMxZDFiMTQxYzYzIiwicXNoIjoiMjU2NDM3MTUzYjIzMzllYmE0ZjNjNTJmMGZhY2MzNDlmNTg1MDFhNWY2Yjk2ZWM2MDMyZmY3OGIzMDg0NDQ0MiIsImlzcyI6ImY5YzJlYWVlLTZlMjQtM2ZhMy05YzY5LTZkYjFkMzY1MzUyZiIsImNvbnRleHQiOnt9LCJleHAiOjE3MjA4ODg2NzAsImlhdCI6MTcyMDg4Nzc3MH0.49npVro9INODCrj5n6YdPEk5uKN-C-1t9OQpWJhX-9o\",\n    \"url\": \"https://firstmatecloud.atlassian.net\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/organisations/{{orgId}}/init-provider",
+							"host": [
+								"{{GIT_MANAGER_ENV_NAME}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"organisations",
+								"{{orgId}}",
+								"init-provider"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/health",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get organisation with repo clone command",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/organisations/667bcfa43373307bae3bf4e6",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organisations",
+						"667bcfa43373307bae3bf4e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get organisation suggestions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/organisations/667bcfa43373307bae3bf4e6/suggestions",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organisations",
+						"667bcfa43373307bae3bf4e6",
+						"suggestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add accessRight github",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "provider",
+						"value": "azure",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCIsImtpZCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCJ9.eyJhdWQiOiJhcGk6Ly9maXJzdG1hdGUiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mODJiZjY0Ni0zMWIyLTRlZmEtYTVmMS01NmNlZjM1ZTQ5OGIvIiwiaWF0IjoxNzE4MzY4MjEzLCJuYmYiOjE3MTgzNjgyMTMsImV4cCI6MTcxODM3MzI0MCwiYWNyIjoiMSIsImFpbyI6IkFWUUFxLzhYQUFBQWEyWFVxVzR2enJ3KzRUUXFVYzVvL2NIOWdHQVp1N3k3ZzlGUlNzK0pNMGJ0OUFoL1B4SkVaUzVoTm9UQldpNXBORVZvdmRjTEFJN3JSRkJmQm5odjhDTzdDRzFmWXBnTjc2c0Z5cURtVDF3PSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwaWQiOiIxZTU5NDVkYy0xMjI4LTQyODUtOGIzOS02NDI1YmMxYjM4NTQiLCJhcHBpZGFjciI6IjAiLCJpcGFkZHIiOiIyYTAyOmEwM2Y6NmFjMTo1ODAwOmI1N2Y6ZDliNjo1Yzk0OmVmODQiLCJuYW1lIjoiSm9jaGVuIHdpbG1zIiwib2lkIjoiOTc4ZjJmOWMtMDgyMC00YTRmLWE4MzktNDdkYmRkMzg1MGEzIiwicmgiOiIwLkFhNEFSdllyLUxJeC1rNmw4VmJPODE1Smk5eEZXUjRvRW9WQ2l6bGtKYndiT0ZTdEFBWS4iLCJzY3AiOiJhY2Nlc3MiLCJzdWIiOiI1X1p3Z3hNY2N6YTQxaWd5LXdQNklGYmhiWUJxYmtTU01rdmV5aVJNY2ZzIiwidGlkIjoiZjgyYmY2NDYtMzFiMi00ZWZhLWE1ZjEtNTZjZWYzNWU0OThiIiwidW5pcXVlX25hbWUiOiJqb2NoZW4ud2lsbXNAZmlyc3RtYXRlLmNsb3VkIiwidXBuIjoiam9jaGVuLndpbG1zQGZpcnN0bWF0ZS5jbG91ZCIsInV0aSI6InQ3aVFjdU1Bd0VxS0RJRW9ZUzAzQUEiLCJ2ZXIiOiIxLjAifQ.lKcu5pBd92ULOIDmOF04NDejDDn3KvqkHst3o1rtRphYc6AWNdhIKdwAblBf78y14UcFTlC_BtxlCPQaKEQkpjmcClF61em0nHX8XiZs7B5MhnfYOZ-T29q3m8kTtD2-QBaF-Q6rhNiixRIDFXXPW8ITPeUa4YQjc-hJFoqZ7rMGxs2Zo8IP3NsTTL7mKNy1rHnzm2He61MZ2QGzNDgCoZj__FNjOH9AwLVSM0OUKF1Av4EYDf9t1Xp08L2IlCNR_XAmVD_zJQHXuGvTJ5gpZp1mP-E0e9ydaemxfRsLK5yVOWXE4EvJOyNYuSW01hWZ0ZkT2ifovv1lcm9gEvmf0A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"resourceName\": \"github-app\",\n    \"provider\": \"github\",\n    \"resourceDetails\": {\n        \"installation_id\": \"51967469\",\n        \"setup_action\": \"update\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/init",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"git",
+						"init"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add accessRight azure dev",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "provider",
+						"value": "azure",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCIsImtpZCI6IkwxS2ZLRklfam5YYndXYzIyeFp4dzFzVUhIMCJ9.eyJhdWQiOiJhcGk6Ly9maXJzdG1hdGUiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mODJiZjY0Ni0zMWIyLTRlZmEtYTVmMS01NmNlZjM1ZTQ5OGIvIiwiaWF0IjoxNzE4MzY4MjEzLCJuYmYiOjE3MTgzNjgyMTMsImV4cCI6MTcxODM3MzI0MCwiYWNyIjoiMSIsImFpbyI6IkFWUUFxLzhYQUFBQWEyWFVxVzR2enJ3KzRUUXFVYzVvL2NIOWdHQVp1N3k3ZzlGUlNzK0pNMGJ0OUFoL1B4SkVaUzVoTm9UQldpNXBORVZvdmRjTEFJN3JSRkJmQm5odjhDTzdDRzFmWXBnTjc2c0Z5cURtVDF3PSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwaWQiOiIxZTU5NDVkYy0xMjI4LTQyODUtOGIzOS02NDI1YmMxYjM4NTQiLCJhcHBpZGFjciI6IjAiLCJpcGFkZHIiOiIyYTAyOmEwM2Y6NmFjMTo1ODAwOmI1N2Y6ZDliNjo1Yzk0OmVmODQiLCJuYW1lIjoiSm9jaGVuIHdpbG1zIiwib2lkIjoiOTc4ZjJmOWMtMDgyMC00YTRmLWE4MzktNDdkYmRkMzg1MGEzIiwicmgiOiIwLkFhNEFSdllyLUxJeC1rNmw4VmJPODE1Smk5eEZXUjRvRW9WQ2l6bGtKYndiT0ZTdEFBWS4iLCJzY3AiOiJhY2Nlc3MiLCJzdWIiOiI1X1p3Z3hNY2N6YTQxaWd5LXdQNklGYmhiWUJxYmtTU01rdmV5aVJNY2ZzIiwidGlkIjoiZjgyYmY2NDYtMzFiMi00ZWZhLWE1ZjEtNTZjZWYzNWU0OThiIiwidW5pcXVlX25hbWUiOiJqb2NoZW4ud2lsbXNAZmlyc3RtYXRlLmNsb3VkIiwidXBuIjoiam9jaGVuLndpbG1zQGZpcnN0bWF0ZS5jbG91ZCIsInV0aSI6InQ3aVFjdU1Bd0VxS0RJRW9ZUzAzQUEiLCJ2ZXIiOiIxLjAifQ.lKcu5pBd92ULOIDmOF04NDejDDn3KvqkHst3o1rtRphYc6AWNdhIKdwAblBf78y14UcFTlC_BtxlCPQaKEQkpjmcClF61em0nHX8XiZs7B5MhnfYOZ-T29q3m8kTtD2-QBaF-Q6rhNiixRIDFXXPW8ITPeUa4YQjc-hJFoqZ7rMGxs2Zo8IP3NsTTL7mKNy1rHnzm2He61MZ2QGzNDgCoZj__FNjOH9AwLVSM0OUKF1Av4EYDf9t1Xp08L2IlCNR_XAmVD_zJQHXuGvTJ5gpZp1mP-E0e9ydaemxfRsLK5yVOWXE4EvJOyNYuSW01hWZ0ZkT2ifovv1lcm9gEvmf0A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"resourceName\": \"azuredev-app\",\n    \"provider\": \"azuredev\",\n    \"resourceDetails\": {\n        \"orgName\": \"desyco\",\n        \"admin_consent\": \"True\",\n        \"tenant\": \"eb71232a-3b43-4855-a08e-cd9ee4d10256\",\n        \"manualPermissionCreation\": false\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/organisations/{{orgId}}/init-provider",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organisations",
+						"{{orgId}}",
+						"init-provider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update org repo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgId\": \"667bcfa43373307bae3bf4e6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/organisations/{{orgId}}/repo-refresh",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"organisations",
+						"{{orgId}}",
+						"repo-refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orgId\": \"66582ac6fe6296630fa79289\",\n    \"repo\": {\n      \"id\": \"bitbucket/firstmatecloud/bitbucket-app\",\n      \"name\": \"bitbucket-app\",\n      \"orgName\": \"firstmatecloud\",\n      \"link\": \"https://bitbucket.org/firstmatecloud/bitbucket-app\",\n      \"avatar\": \"https://bytebucket.org/ravatar/%7Ba4cf3327-a6fc-406b-b1b6-05f8633a83c9%7D?ts=default\",\n      \"metadata\": {\n        \"language\": \"\",\n        \"project\": \"firstmate\"\n      },\n      \"providerId\": \"connection-5357325-bitbucket-app\",\n      \"provider\": \"bitbucket\",\n      \"status\": \"connected\"\n    },\n    \"commitMessage\": \"THis is a test\",\n    \"branch\": \"firstmate-improvement-test\",\n    \"prBody\": \"WHoop whoop\",\n    \"createPr\": true,\n    \"isFinished\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/git/commit",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"git",
+						"commit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create suggestion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Resource tagging improvements\",\n  \"description\": \"It's important to correctly tag all resources in your deployment. This makes detailed cost tracking possible.\",\n  \"orgId\": \"66582ac6fe6296630fa79289\",\n  \"prs\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/suggestion",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"suggestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "analyse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Resource tagging improvements\",\n  \"description\": \"It's important to correctly tag all resources in your deployment. This makes detailed cost tracking possible.\",\n  \"orgId\": \"66582ac6fe6296630fa79289\",\n  \"prs\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{GIT_MANAGER_ENV_NAME}}/api/v1/suggestion",
+					"host": [
+						"{{GIT_MANAGER_ENV_NAME}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"suggestion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

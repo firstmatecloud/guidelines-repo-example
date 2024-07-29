@@ -1,0 +1,70 @@
+{
+  "subscriptionId": "5351c44e-61ba-454f-9340-f23063dc5bd7",
+  "notificationId": 1,
+  "id": "4bdc24d9-f197-46b9-af40-c44e42e258e3",
+  "eventType": "ms.vss-code.git-pullrequest-comment-event",
+  "publisherId": "tfs",
+  "message": {
+    "text": "jochen wilms has commented on a pull request",
+    "html": "jochen wilms has <a href=\"https://dev.azure.com/desyco/test/_git/test/pullrequest/3?discussionId=3\">commented</a> on a pull request",
+    "markdown": "jochen wilms has [commented](https://dev.azure.com/desyco/test/_git/test/pullrequest/3?discussionId=3) on a pull request"
+  },
+  "detailedMessage": {
+    "text": "jochen wilms has commented on a pull request\r\nAdd a comment\r\n",
+    "html": "jochen wilms has <a href=\"https://dev.azure.com/desyco/test/_git/test/pullrequest/3?discussionId=3\">commented</a> on a pull request<p>Add a comment</p>",
+    "markdown": "jochen wilms has [commented](https://dev.azure.com/desyco/test/_git/test/pullrequest/3?discussionId=3) on a pull request\r\nAdd a comment\r\n"
+  },
+  "resource": {
+    "id": 1,
+    "parentCommentId": 0,
+    "author": {
+      "displayName": "jochen wilms",
+      "url": "https://spsprodneu1.vssps.visualstudio.com/A2b79a87c-c631-401d-8e61-e85b84b5943d/_apis/Identities/9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy"
+        }
+      },
+      "id": "9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2",
+      "uniqueName": "azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com",
+      "imageUrl": "https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy",
+      "descriptor": "aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy"
+    },
+    "content": "Add a comment",
+    "publishedDate": "2024-07-09T08:18:20.97Z",
+    "lastUpdatedDate": "2024-07-09T08:18:20.97Z",
+    "lastContentUpdatedDate": "2024-07-09T08:18:20.97Z",
+    "commentType": "text",
+    "usersLiked": [],
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/desyco/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/pullRequests/3/threads/3/comments/1"
+      },
+      "repository": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f"
+      },
+      "threads": {
+        "href": "https://dev.azure.com/desyco/_apis/git/repositories/ba8bff70-6791-415c-b1f5-64486a33fb6f/pullRequests/3/threads/3"
+      },
+      "pullRequests": {
+        "href": "https://dev.azure.com/desyco/_apis/git/pullRequests/3"
+      }
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "1819e758-b656-4871-beb9-190ce017edf3",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    },
+    "account": {
+      "id": "2b79a87c-c631-401d-8e61-e85b84b5943d",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    },
+    "project": {
+      "id": "78d8dde9-9884-4982-bfef-4a7e660eaa9a",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    }
+  },
+  "createdDate": "2024-07-09T08:18:27.4730351Z"
+}

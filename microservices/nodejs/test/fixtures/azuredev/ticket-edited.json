@@ -1,0 +1,126 @@
+{
+  "subscriptionId": "e1fd00dc-a092-45f8-bea5-bd7adec6edf6",
+  "notificationId": 1,
+  "id": "528cceba-b960-46c8-b717-69343577ff48",
+  "eventType": "workitem.updated",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Issue #1 (THis is my firstworkItem) updated by jochen wilms\r\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1)",
+    "html": "<a href=\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=1\">Issue #1</a> (THis is my firstworkItem) updated by jochen wilms",
+    "markdown": "[Issue #1](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1) (THis is my firstworkItem) updated by jochen wilms"
+  },
+  "detailedMessage": {
+    "text": "Issue #1 (THis is my firstworkItem) updated by jochen wilms\r\n(https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1)\r\n\r\n",
+    "html": "<a href=\"https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&amp;id=1\">Issue #1</a> (THis is my firstworkItem) updated by jochen wilms<ul></ul>",
+    "markdown": "[Issue #1](https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1) (THis is my firstworkItem) updated by jochen wilms\r\n\r\n"
+  },
+  "resource": {
+    "id": 2,
+    "workItemId": 1,
+    "rev": 2,
+    "revisedBy": {
+      "id": "9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2",
+      "name": "jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>",
+      "displayName": "jochen wilms",
+      "url": "https://spsprodneu1.vssps.visualstudio.com/A2b79a87c-c631-401d-8e61-e85b84b5943d/_apis/Identities/9fc4aa2f-a8c6-606a-88e1-4dbc26e4b4b2",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy"
+        }
+      },
+      "uniqueName": "azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com",
+      "imageUrl": "https://dev.azure.com/desyco/_apis/GraphProfile/MemberAvatars/aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy",
+      "descriptor": "aad.OWZjNGFhMmYtYThjNi03MDZhLTg4ZTEtNGRiYzI2ZTRiNGIy"
+    },
+    "revisedDate": "9999-01-01T00:00:00Z",
+    "fields": {
+      "System.Rev": {
+        "oldValue": 1,
+        "newValue": 2
+      },
+      "System.AuthorizedDate": {
+        "oldValue": "2024-07-09T08:23:49.033Z",
+        "newValue": "2024-07-09T08:24:46.57Z"
+      },
+      "System.RevisedDate": {
+        "oldValue": "2024-07-09T08:24:46.57Z",
+        "newValue": "9999-01-01T00:00:00Z"
+      },
+      "System.ChangedDate": {
+        "oldValue": "2024-07-09T08:23:49.033Z",
+        "newValue": "2024-07-09T08:24:46.57Z"
+      },
+      "System.Watermark": {
+        "oldValue": 1,
+        "newValue": 2
+      },
+      "System.Description": {
+        "newValue": "<div>I added this later. </div>"
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/updates/2"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/updates"
+      },
+      "parent": {
+        "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1"
+      },
+      "html": {
+        "href": "https://dev.azure.com/desyco/web/wi.aspx?pcguid=1819e758-b656-4871-beb9-190ce017edf3&id=1"
+      }
+    },
+    "url": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/updates/2",
+    "revision": {
+      "id": 1,
+      "rev": 2,
+      "fields": {
+        "System.AreaPath": "test",
+        "System.TeamProject": "test",
+        "System.IterationPath": "test",
+        "System.WorkItemType": "Issue",
+        "System.State": "To Do",
+        "System.Reason": "Added to backlog",
+        "System.CreatedDate": "2024-07-09T08:23:49.033Z",
+        "System.CreatedBy": "jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>",
+        "System.ChangedDate": "2024-07-09T08:24:46.57Z",
+        "System.ChangedBy": "jochen wilms <azure_desyco.com#EXT#@azuredesyco.onmicrosoft.com>",
+        "System.CommentCount": 0,
+        "System.Title": "THis is my firstworkItem",
+        "Microsoft.VSTS.Common.StateChangeDate": "2024-07-09T08:23:49.033Z",
+        "Microsoft.VSTS.Common.Priority": 2,
+        "System.Description": "<div>I added this later. </div>"
+      },
+      "_links": {
+        "self": {
+          "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/revisions/2"
+        },
+        "workItemRevisions": {
+          "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/revisions"
+        },
+        "parent": {
+          "href": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1"
+        }
+      },
+      "url": "https://dev.azure.com/desyco/78d8dde9-9884-4982-bfef-4a7e660eaa9a/_apis/wit/workItems/1/revisions/2"
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "1819e758-b656-4871-beb9-190ce017edf3",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    },
+    "account": {
+      "id": "2b79a87c-c631-401d-8e61-e85b84b5943d",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    },
+    "project": {
+      "id": "78d8dde9-9884-4982-bfef-4a7e660eaa9a",
+      "baseUrl": "https://dev.azure.com/desyco/"
+    }
+  },
+  "createdDate": "2024-07-09T08:24:52.8814286Z"
+}

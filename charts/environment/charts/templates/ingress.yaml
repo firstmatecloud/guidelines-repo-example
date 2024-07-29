@@ -1,0 +1,48 @@
+{{ if index .Values "ingress" "enabled" "default"}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  labels:
+      chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+      env: dev
+  annotations:
+    kubernetes.io/ingress.class: {{ .Values.ingress.ingressPublicClassName }}
+    cert-manager.io/cluster-issuer: "firstmate-dev"
+    "kubernetes.io/tls-acme": "true"
+    "nginx.ingress.kubernetes.io/auth-tls-verify-client": "off"
+    "nginx.ingress.kubernetes.io/enable-modsecurity": "false"
+    "nginx.ingress.kubernetes.io/enable-owasp-core-rules": "false"
+    "nginx.ingress.kubernetes.io/from-to-www-redirect": "false"
+    "nginx.ingress.kubernetes.io/limit-burst-multiplier": "1"
+    "nginx.ingress.kubernetes.io/limit-rps": "50"
+    "nginx.ingress.kubernetes.io/limit-whitelist": ""
+    "nginx.ingress.kubernetes.io/modsecurity-transaction-id": "$request_id"
+    "nginx.ingress.kubernetes.io/proxy-body-size": "10m"
+    "nginx.ingress.kubernetes.io/whitelist-source-range": "0.0.0.0/0"
+    "ngxinx.ingress.kubernetes.io/ssl-redirect": "true"
+  name: {{ .Chart.Name }}
+spec:
+  ingressClassName: {{ .Values.ingress.ingressPublicClassName }}
+  rules:
+    - host: dev.firstmate.cloud
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: firstmate-platform-helm
+                port:
+                  number: 80
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: firstmate-backend-helm
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - dev.firstmate.cloud
+      secretName: firstmate-tls
+{{ end }}
