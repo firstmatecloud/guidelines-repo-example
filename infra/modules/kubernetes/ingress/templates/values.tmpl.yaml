@@ -1,0 +1,15 @@
+controller:
+  extraArgs:
+    update-status: "true"
+  metrics:
+    enabled: true
+  service:
+    annotations:
+      service.beta.kubernetes.io/azure-pip-name: ${AZURE_PIP_NAME}
+      service.beta.kubernetes.io/azure-load-balancer-resource-group: ${AZURE_LOAD_BALANCER_RG}
+    externalTrafficPolicy: Local
+    loadBalancerIP: ${STATIC_IP}
+  stats:
+    enabled: true
+rbac:
+  create: true
