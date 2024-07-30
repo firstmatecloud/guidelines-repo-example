@@ -1,1 +1,0 @@
-The charts repo are always using helm charts. 
