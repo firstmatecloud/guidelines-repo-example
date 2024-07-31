@@ -8,7 +8,3 @@
 
 * Every repository should have a testing pipeline, automatically triggered when a PR is created.
 * The testing pipeline should be successful to be able to merge a PR.
-
-## Branching
-
-* 'main' is used as the main branch. No one can push to the main branch.
