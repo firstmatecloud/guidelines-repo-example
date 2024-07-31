@@ -2,4 +2,5 @@
 
 ## Docker
 
-* We use node:x-alpine as a base image
+* We always use alpine node images as a base image in Dockerfiles.
+* Use a fixed version number in a docker source image, not 'latest'

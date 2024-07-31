@@ -2,9 +2,11 @@
 
 ## Pipelines
 
-* Every microservice repo should contain Unit tests that are executed on every pull request.
-* Every microservice repo should contain Postman tests that are executed on every pull request.
+* Every repo should contain Unit tests that are executed on every pull request.
+* Every repo should contain Postman tests that are executed on every pull request.
 
+## Unit tests
+* Unit tests are in the folder 'test'
 
 ## DockerFiles
 
