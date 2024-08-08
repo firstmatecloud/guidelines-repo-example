@@ -4,7 +4,8 @@
 
 * Every repo should contain an updated readme file.
 
-## Pipelines
+## Code
 
-* Every repository should have a testing pipeline, automatically triggered when a PR is created.
-* The testing pipeline should be successful to be able to merge a PR.
+* Don't log sensitive data
+* When external API services, use retries.
+* There should be no secrets or credentials in the code
